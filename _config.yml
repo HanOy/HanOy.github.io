@@ -4,7 +4,7 @@ url: ouyanghan.com # site url
 avatar: /assets/img/avatar.jpg # path/to/avatar for index page. e.g. /assets/img/avatar.jpg
 favicon: /assets/img/favicon.ico # path/to/favicon for site. e.g. /assets/img/favicon.ico
 google_analytics: # google analytics id
-disqus_shortname: hoy # disqus_shortname for disqus comment system
+disqus_shortname: ouyanghan # disqus_shortname for disqus comment system
 
 # Content for about page.
 # Each paragraph will be a <p> tag which is inserted to about
