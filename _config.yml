@@ -17,14 +17,11 @@ disqus_shortname: ouyanghan # disqus_shortname for disqus comment system
 #
 about:
   - paragraph: Hello,I'm ?link?.
-              programmer&runner.
+              I'm a programmer.
     text_align: center
     links:
       - name: 欧阳晗
-        url: https://ouyanghan.com/
-        external: true
-      - name: Lang Liu
-        url: http://kkninjae.com/about/
+        url: http://ouyanghan.com/
         external: false
 
     
