@@ -5,8 +5,8 @@
     <description>hoy</description>
     <link>ouyanghan.com/</link>
     <atom:link href="ouyanghan.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Mar 2016 10:30:19 +0800</pubDate>
-    <lastBuildDate>Fri, 04 Mar 2016 10:30:19 +0800</lastBuildDate>
+    <pubDate>Fri, 04 Mar 2016 10:38:14 +0800</pubDate>
+    <lastBuildDate>Fri, 04 Mar 2016 10:38:14 +0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -27,13 +27,15 @@ VALUES
 
 &lt;p&gt;当我们要把张三换到二班：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; where name = &#39;张三&#39;;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; 
+where name = &#39;张三&#39;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;当我们要把张三、李四、王五都换到二班去，前提是不能删除后新增，毕竟删除有风险，断个电啥的：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; where name in (&#39;张三&#39;,&#39;李四&#39;,&#39;王五&#39;);
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; 
+where name in (&#39;张三&#39;,&#39;李四&#39;,&#39;王五&#39;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 

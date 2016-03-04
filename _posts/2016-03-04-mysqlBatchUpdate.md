@@ -20,11 +20,13 @@ category: blog
 
 当我们要把张三换到二班：
 
-	update student set class = '二班' where name = '张三';
+	update student set class = '二班' 
+	where name = '张三';
 
 当我们要把张三、李四、王五都换到二班去，前提是不能删除后新增，毕竟删除有风险，断个电啥的：
 	
-	update student set class = '二班' where name in ('张三','李四','王五');
+	update student set class = '二班' 
+	where name in ('张三','李四','王五');
 
 上面这条语句只适用于所有同学都换到二班的情况，现在他们都在二班了，把他们还原到原来班级的话，就不适用了，只能这样先：
 

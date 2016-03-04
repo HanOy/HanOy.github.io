@@ -102,13 +102,15 @@ VALUES
 
 <p>当我们要把张三换到二班：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>update student set class = '二班' where name = '张三';
+<div class="highlighter-rouge"><pre class="highlight"><code>update student set class = '二班' 
+where name = '张三';
 </code></pre>
 </div>
 
 <p>当我们要把张三、李四、王五都换到二班去，前提是不能删除后新增，毕竟删除有风险，断个电啥的：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>update student set class = '二班' where name in ('张三','李四','王五');
+<div class="highlighter-rouge"><pre class="highlight"><code>update student set class = '二班' 
+where name in ('张三','李四','王五');
 </code></pre>
 </div>
 
