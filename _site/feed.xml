@@ -5,9 +5,132 @@
     <description>hoy</description>
     <link>ouyanghan.com/</link>
     <atom:link href="ouyanghan.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Feb 2016 15:49:47 +0800</pubDate>
-    <lastBuildDate>Fri, 19 Feb 2016 15:49:47 +0800</lastBuildDate>
+    <pubDate>Fri, 04 Mar 2016 10:30:19 +0800</pubDate>
+    <lastBuildDate>Fri, 04 Mar 2016 10:30:19 +0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>mysql批量更新的几种方式</title>
+        <description>&lt;p&gt;最近安排我去帮同事做基础数据的导入，知道了一些老师没教过的批量更新的黑科技，特整理一下：&lt;/p&gt;
+
+&lt;p&gt;首先先假设有student表吧，有name，age，class三个column，主键是name。&lt;/p&gt;
+
+&lt;p&gt;基础数据：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO student (name, age, class)
+VALUES
+	(&#39;张三&#39;, &#39;3&#39;, &#39;三班&#39;),
+	(&#39;李四&#39;, &#39;4&#39;, &#39;四班&#39;),
+	(&#39;王五&#39;, &#39;5&#39;, &#39;五班&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;当我们要把张三换到二班：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; where name = &#39;张三&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;当我们要把张三、李四、王五都换到二班去，前提是不能删除后新增，毕竟删除有风险，断个电啥的：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; where name in (&#39;张三&#39;,&#39;李四&#39;,&#39;王五&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;上面这条语句只适用于所有同学都换到二班的情况，现在他们都在二班了，把他们还原到原来班级的话，就不适用了，只能这样先：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;三班&#39; where name = &#39;张三&#39;;
+...                        &#39;四班&#39;  ...         &#39;李四&#39;;
+...                        &#39;五班&#39;  ...         &#39;王五&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;那么一个foreach，循环上述3条语句，这也是很好实现的。问题就是当成千上万条数据，那么就有成千上万个数据库连接，这样是效率很低的，我们考虑一条sql完成批量更新不同字段，下面有三种方式。&lt;/p&gt;
+
+&lt;h2 id=&quot;case-when&quot;&gt;case when&lt;/h2&gt;
+
+&lt;p&gt;二班所有人都回到原班级：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;UPDATE student SET class = 
+CASE
+	WHEN NAME = &#39;张三&#39; THEN &#39;三班&#39;
+	WHEN NAME = &#39;李四&#39; THEN &#39;四班&#39;
+	WHEN NAME = &#39;王五&#39; THEN &#39;五班&#39; 
+END;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这样我们就实现了一条sql完成批量更新的任务了，具体实现呢，也很直观，用循环去拼接sql。&lt;/p&gt;
+
+&lt;p&gt;不好的地方：如果是修改很多字段，那么每个字段都必须有case，如果修改的记录很多，when也同样那么多，这样的话，这条sql就太长了吧。。&lt;/p&gt;
+
+&lt;h2 id=&quot;replace-into&quot;&gt;replace into&lt;/h2&gt;
+
+&lt;p&gt;还是假设他们在二班，二班所有人都回到原班级：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;REPLACE INTO student (name,class) 
+values 
+	(&#39;张三&#39;,&#39;三班&#39;),
+	(&#39;李四&#39;,&#39;四班&#39;),
+	(&#39;王五&#39;,&#39;五班&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;首先说下 replace into，它和 insert into 类似，可以说是insert into的加强版。&lt;/p&gt;
+
+&lt;p&gt;加强的地方在于：replace into 先尝试插入数据到表，如果发现表中已有此行数据（根据主键或唯一索引）则先删除原数据，然后再插入新数据，否则就是直接插入新数据。&lt;/p&gt;
+
+&lt;p&gt;我们看下上面这条语句的执行结果，受影响的行是6，说明先删了3条，再增了3条，增加的三条age字段都是null，因为我们没有给age字段的数据，所以真正完整的sql应该是这样：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;REPLACE INTO student (name,age,class) 
+values 
+	(&#39;张三&#39;,&#39;3&#39;,&#39;三班&#39;),
+	(&#39;李四&#39;,&#39;4&#39;,&#39;四班&#39;),
+	(&#39;王五&#39;,&#39;5&#39;,&#39;五班&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;注意的地方：要记得把所有的字段都放进去吧,不然age字段就没啦。必须要有主键或者索引，如果有多个索引，它会删除所有索引匹配到的所有记录的。&lt;/p&gt;
+
+&lt;h2 id=&quot;on-duplicate-key-update&quot;&gt;on duplicate key update&lt;/h2&gt;
+
+&lt;p&gt;还是假设他们在二班，二班所有人都回到原班级：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO student (NAME, class)
+VALUES
+	(&#39;张三&#39;, &#39;三班&#39;),
+	(&#39;李四&#39;, &#39;四班&#39;),
+	(&#39;王五&#39;, &#39;五班&#39;) 
+ON DUPLICATE KEY UPDATE class = VALUES(class);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如果只是单纯的修改的话，上述语句已经达到了我们的要求。这种方式也是先增，如果记录中有则update。修改多条记录的话，就是这样：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO student (NAME, age, class)
+VALUES
+	(&#39;张三&#39;, 1, &#39;三班&#39;),
+	(&#39;李四&#39;, 1, &#39;四班&#39;),
+	(&#39;王五&#39;, 1, &#39;五班&#39;) 
+ON DUPLICATE KEY UPDATE 
+	class = VALUES(class),
+	age = VALUES(age);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;要注意的是：还是需要主键或索引的。&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 04 Mar 2016 00:00:00 +0800</pubDate>
+        <link>ouyanghan.com/blog/2016/03/04/mysqlBatchUpdate.html</link>
+        <guid isPermaLink="true">ouyanghan.com/blog/2016/03/04/mysqlBatchUpdate.html</guid>
+        
+        <category>Chinese</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>我的博客是怎么实现的</title>
