@@ -5,9 +5,32 @@
     <description>hoy</description>
     <link>ouyanghan.com/</link>
     <atom:link href="ouyanghan.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Jun 2016 10:51:34 +0800</pubDate>
-    <lastBuildDate>Mon, 13 Jun 2016 10:51:34 +0800</lastBuildDate>
+    <pubDate>Mon, 13 Jun 2016 11:04:17 +0800</pubDate>
+    <lastBuildDate>Mon, 13 Jun 2016 11:04:17 +0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>冲动是可以用写代码来抑制的吧</title>
+        <description>&lt;p&gt;心血来潮想写点啥&lt;/p&gt;
+
+&lt;p&gt;写着写着&lt;/p&gt;
+
+&lt;p&gt;又来bug了&lt;/p&gt;
+
+&lt;p&gt;bug解决完了&lt;/p&gt;
+
+&lt;p&gt;潮已经退了&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Jun 2016 00:00:00 +0800</pubDate>
+        <link>ouyanghan.com/blog/2016/06/13/mood.html</link>
+        <guid isPermaLink="true">ouyanghan.com/blog/2016/06/13/mood.html</guid>
+        
+        <category>chinese</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>开源翻墙利器</title>
