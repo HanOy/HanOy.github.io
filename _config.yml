@@ -1,28 +1,10 @@
-title: 欧阳晗的博客
-description: hoy
-url: ouyanghan.com # site url
-avatar: /assets/img/avatar.jpg # path/to/avatar for index page. e.g. /assets/img/avatar.jpg
-favicon: /assets/img/favicon.ico # path/to/favicon for site. e.g. /assets/img/favicon.ico
-google_analytics: # google analytics id
-disqus_shortname: ouyanghan # disqus_shortname for disqus comment system
-
-# Content for about page.
-# Each paragraph will be a <p> tag which is inserted to about
-# page. text_align is used to align the text. Default is left.
-# Other two values are center and right. If there are some links
-# in your paragraph, use '?link?' to take the place of a link.
-# And then write the real link under links. name is the link
-# text. url is the link. when external is set as true, then
-# a new whidow will be open when link is clicked.
-#
-about:
-  - paragraph: Hello,I'm ?link?.
-              I'm a programmer.<br>currently living in Shanghai.<br><br>
-              If you want to get in touch with me, <a href="mailto:oyh3745@gmail.com">email</a> is best.
-    text_align: center
-    links:
-      - name: 欧阳晗
-        url: http://ouyanghan.com/
-        external: false
-
-    
+port: 3000
+lsi: false
+permalink: /:title
+markdown: kramdown
+# Since GH pages override this to "true", we test this value to see if we are running locally
+safe: false
+include: [".well-known"]
+gems:
+  - jekyll-redirect-from
+  - rdiscount

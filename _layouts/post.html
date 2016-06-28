@@ -1,47 +1,22 @@
 ---
 layout: default
 ---
-<div class="footer-clear post-wrapper">
-
-  <!-- post archive trigger -->
-  <div class="post-archive-trigger">
-    <div class="post-archive-icon"></div>
-  </div>
-
-  <!-- post archive -->
-  <div class="post-archive">
-    <div class="post-archive-iterms">
-      {% for post in site.posts %}
-      {% if page.url == post.url %}
-      {% assign status = 'checked' %}
-      {% else %}
-      {% assign status = '' %}
-      {% endif %}
-      <a class="post-archive-iterm" href="{{ post.url }}">
-        <span class="post-archive-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-        <span class="post-archive-title {{ status }}">{{ post.title }}</span>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- post header -->
-  <div class="post-header">
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    {% unless page.title_hidden %}
     <h1>{{ page.title }}</h1>
-    <span>{{ page.date | date: "%Y-%m-%d" }}</span>
-  </div>
+    <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%b %d, %Y" }}
+    </info>
+    {% endunless %}
+    <div class="body">{{ content }}</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="//rsms.me{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
 
-  <!-- post content -->
-  {% if page.tags contains 'chinese' %}
-  {% assign type = 'chinese' %}
-  {% else %}
-  {% assign type = 'english' %}
-  {% endif %}
-
-  <div class="post-content {{ type }}">
-    {{ content }}
-    
-    Share:
+  Share:
   <!-- JiaThis Button BEGIN -->
   <div class="jiathis_style">
     <a class="jiathis_button_tsina"></a>
@@ -50,32 +25,19 @@ layout: default
   </div>
   <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
   <!-- JiaThis Button END -->
-  </div>
-
-  <!-- post navigator -->
-  <div class="post-nav">
-    {% if page.previous %}
-    <a class="post-nav-previous"href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-    {% endif %}
-
-    {% if page.previous and page.next %}
-    <div class="post-nav-sep"></div>
-    {% endif %}
-
-    {% if page.next %}
-    <a class="post-nav-next" href="{{ page.next.url }}">{{ page.next.title }}</a>
-    {% endif %}
-  </div>
-
-  <!-- disqus comment system -->
-  {% if site.disqus_shortname != '' %}
-  <div class="post-comment">
+  
+  {% if page.disqus_comments %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      window.disqus_identifier = {% if page.tumblr_id %}"{{ page.tumblr_id }}"{% else %}"{{ page.id }}"{% endif %};
+    </script>
+    <script async src="//hunch.disqus.com/embed.js"></script>
+    <noscript>Please enable JavaScript to view the
+      <a href="http://disqus.com/?ref_noscript=hunch">comments powered by Disqus.</a>
+    </noscript>
     {% include disqus.html %}
   </div>
   {% endif %}
-
-  <!-- footer -->
-  {% include footer.html %}
-
+  </div>
 </div>
-
+{% include autoreload-in-debug.html %}

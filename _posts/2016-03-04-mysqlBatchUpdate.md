@@ -4,6 +4,7 @@ title: mysql批量更新的几种方式
 date: 2016-03-04
 tags: Chinese
 category: blog
+disqus_comments: true
 ---
 
 最近安排我去帮同事做基础数据的导入，知道了一些老师没教过的批量更新的黑科技，特整理一下：
