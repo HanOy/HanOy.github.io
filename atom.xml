@@ -4,8 +4,8 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Rasmus Andersson</title>
-  <link href="http://rsms.me/atom.xml" rel="self"/>
-  <link href="http://rsms.me/"/>
+  <link href="http://ouyanghan/atom.xml" rel="self"/>
+  <link href="http://ouyanghan/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://ouyanghan.com/</id>
   <author>
