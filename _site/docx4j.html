@@ -23,8 +23,8 @@
     
     <meta property="og:title" content="docx4j使用小结">
       
-      <meta name="description" content="docx4j使用小结 Mar 31, 2016 又忙活了一段时间，新项目还在搭，趁着有空总结一下前段时间用过的docx4j。 当时的需求是这样的，客户提供了word的报表模板，我们需要根据查出的数据导出为pdf。 面临的问题是：word模板比较复杂，不是单纯的填空，要根据数据的情况分多行展现。 最后我选择了用docx4j来实现。 百度百科：docx4j是一个Java类库用于创建和操作Microsoft Open XML(Word docx, Powerpoint pptx, 和 Excel xlsx)文件。 需要注意的是，它操作的是.docx、.pptx和.xlsx文件，这些后缀的文件本质上与.doc、.ppt和.xls是不同的。 可以这样理解：docx是基于xml文件来实现的，当你用压缩工作打开一个.docx文档，你就能看到里面的xml了。 这就是为什么docx4j严重依赖JAXB了，因为它要操作的其实是xml文件。 来看一下官方github的demo: 新建一个.docx文件，CreateWordprocessingMLDocument.java public static void...">
-      <meta name="og:description" content="docx4j使用小结 Mar 31, 2016 又忙活了一段时间，新项目还在搭，趁着有空总结一下前段时间用过的docx4j。 当时的需求是这样的，客户提供了word的报表模板，我们需要根据查出的数据导出为pdf。 面临的问题是：word模板比较复杂，不是单纯的填空，要根据数据的情况分多行展现。 最后我选择了用docx4j来实现。 百度百科：docx4j是一个Java类库用于创建和操作Microsoft Open XML(Word docx, Powerpoint pptx, 和 Excel xlsx)文件。 需要注意的是，它操作的是.docx、.pptx和.xlsx文件，这些后缀的文件本质上与.doc、.ppt和.xls是不同的。 可以这样理解：docx是基于xml文件来实现的，当你用压缩工作打开一个.docx文档，你就能看到里面的xml了。 这就是为什么docx4j严重依赖JAXB了，因为它要操作的其实是xml文件。 来看一下官方github的demo: 新建一个.docx文件，CreateWordprocessingMLDocument.java public static void...">
+      <meta name="description" content="又忙活了一段时间，新项目还在搭，趁着有空总结一下前段时间用过的docx4j。">
+      <meta name="og:description" content="又忙活了一段时间，新项目还在搭，趁着有空总结一下前段时间用过的docx4j。">
       
     
     
