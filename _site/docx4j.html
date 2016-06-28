@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <title>docx4j使用小结 &mdash; 欧阳晗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- <link href='//fonts.googleapis.com/css?family=Poly:400' rel='stylesheet' type='text/css'> -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Rasmus Andersson" href="/atom.xml">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="p:domain_verify" content="b3fb3041235fca06534c26184a7588bf"/>
+    
+    
+    <meta property="og:title" content="docx4j使用小结">
+      
+      <meta name="description" content="docx4j使用小结 Mar 31, 2016 又忙活了一段时间，新项目还在搭，趁着有空总结一下前段时间用过的docx4j。 当时的需求是这样的，客户提供了word的报表模板，我们需要根据查出的数据导出为pdf。 面临的问题是：word模板比较复杂，不是单纯的填空，要根据数据的情况分多行展现。 最后我选择了用docx4j来实现。 百度百科：docx4j是一个Java类库用于创建和操作Microsoft Open XML(Word docx, Powerpoint pptx, 和 Excel xlsx)文件。 需要注意的是，它操作的是.docx、.pptx和.xlsx文件，这些后缀的文件本质上与.doc、.ppt和.xls是不同的。 可以这样理解：docx是基于xml文件来实现的，当你用压缩工作打开一个.docx文档，你就能看到里面的xml了。 这就是为什么docx4j严重依赖JAXB了，因为它要操作的其实是xml文件。 来看一下官方github的demo: 新建一个.docx文件，CreateWordprocessingMLDocument.java public static void...">
+      <meta name="og:description" content="docx4j使用小结 Mar 31, 2016 又忙活了一段时间，新项目还在搭，趁着有空总结一下前段时间用过的docx4j。 当时的需求是这样的，客户提供了word的报表模板，我们需要根据查出的数据导出为pdf。 面临的问题是：word模板比较复杂，不是单纯的填空，要根据数据的情况分多行展现。 最后我选择了用docx4j来实现。 百度百科：docx4j是一个Java类库用于创建和操作Microsoft Open XML(Word docx, Powerpoint pptx, 和 Excel xlsx)文件。 需要注意的是，它操作的是.docx、.pptx和.xlsx文件，这些后缀的文件本质上与.doc、.ppt和.xls是不同的。 可以这样理解：docx是基于xml文件来实现的，当你用压缩工作打开一个.docx文档，你就能看到里面的xml了。 这就是为什么docx4j严重依赖JAXB了，因为它要操作的其实是xml文件。 来看一下官方github的demo: 新建一个.docx文件，CreateWordprocessingMLDocument.java public static void...">
+      
+    
+    
+    
+    
+    <meta property="og:url" content="https://ouyanghan.com/docx4j">
+    <meta property="og:site_name" content="ouyanghan.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2016-03-31">
+    
+    <script>window.initFuncs = [];</script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature.png" width="180" height="60" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+    
+    <h1>docx4j使用小结</h1>
+    <info datetime="2016-03-31">
+      Mar 31, 2016
+    </info>
+    
+    <div class="body"><p>又忙活了一段时间，新项目还在搭，趁着有空总结一下前段时间用过的docx4j。</p>
+
+<p>当时的需求是这样的，客户提供了word的报表模板，我们需要根据查出的数据导出为pdf。</p>
+
+<p>面临的问题是：word模板比较复杂，不是单纯的填空，要根据数据的情况分多行展现。</p>
+
+<p>最后我选择了用docx4j来实现。</p>
+
+<p><a href="http://baike.baidu.com/link?url=PAJ3dW50dwcJ71R02ZbTvhfeuglMJJ0EXulYjJzjF6W76n67fhoLJ4v5XKOep1wJB4bplI6xT69rPkRU9qBZ__">百度百科</a>：docx4j是一个Java类库用于创建和操作Microsoft Open XML(Word docx, Powerpoint pptx, 和 Excel xlsx)文件。</p>
+
+<p>需要注意的是，它操作的是.docx、.pptx和.xlsx文件，这些后缀的文件本质上与.doc、.ppt和.xls是不同的。</p>
+
+<p>可以这样理解：docx是基于xml文件来实现的，当你用压缩工作打开一个.docx文档，你就能看到里面的xml了。</p>
+
+<p>这就是为什么docx4j严重依赖JAXB了，因为它要操作的其实是xml文件。</p>
+
+<p>来看一下<a href="https://github.com/plutext/docx4j/tree/master/src/samples/docx4j/org/docx4j/samples">官方github的demo</a>:</p>
+
+<h2 id="docxcreatewordprocessingmldocumentjava">新建一个.docx文件，CreateWordprocessingMLDocument.java</h2>
+<div class="highlighter-rouge"><pre class="highlight"><code>public static void main(String[] args) throws Exception {
+	WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.createPackage();
+	MainDocumentPart mdp = wordMLPackage.getMainDocumentPart();
+	
+	// Example 1: add text in Title style
+	mdp.addStyledParagraphOfText("Title", "Example 1");
+
+	// Example 2: add normal paragraph (no explicit style)
+	mdp.addParagraphOfText("Example 2");
+
+	// Example 4: Here is an easier way:
+	String str = "&lt;w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" &gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:b /&gt;&lt;/w:rPr&gt;&lt;w:t&gt;Example 4&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;";
+    
+	mdp.addObject(org.docx4j.XmlUtils.unmarshalString(str));
+    
+	// Example 5: Let's add a table
+	int writableWidthTwips = wordMLPackage.getDocumentModel().getSections().get(0).getPageDimensions().getWritableWidthTwips();
+	int cols = 3;
+	int cellWidthTwips = new Double(Math.floor((writableWidthTwips/cols))).intValue();
+    
+	Tbl tbl = TblFactory.createTable(3, 3, cellWidthTwips);
+	mdp.addObject(tbl);
+    
+	// Pretty print the main document part
+	System.out.println(XmlUtils.marshaltoString(mdp.getJaxbElement(), true, true) );
+	
+	// save it
+	String filename = System.getProperty("user.dir") + "/OUT_CreateWordprocessingMLDocument.docx";
+	wordMLPackage.save(new java.io.File(filename) );
+	System.out.println("Saved " + filename);
+}
+</code></pre>
+</div>
+
+<p>example 3 有点烦，就给去掉了。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	MainDocumentPart mdp = wordMLPackage.getMainDocumentPart();
+</code></pre>
+</div>
+
+<p>这段代码mdp获取的到的，其实就是用压缩工具打开的.docx文档中的document.xml文件的内容，
+而我们对mdp操作也就是直接操作document.xml，最后通过document.xml来生成.docx文档。</p>
+
+<p>上面的所有的例子也就是修改document.xml。</p>
+
+<p>大家看example 4 ，可以直接把xml的内容放进document.xml中。</p>
+
+<p>根据我的需求，既然word模板有了，我就解压出来找到document.xml，把里面的内容复制出来再清空。通过代码自己去新增，所以我需要修改复制出来的内容，在需要赋值的地方，把查出来的值放进去。虽然比较笨，但还是保持了word文档的一致性，简直一模一样。一些代码如下：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>for (RepairMaterialsPojo material : pojo.getMaterials()) {
+    String tr = "&lt;w:tr&gt;&lt;w:tblPrEx&gt;&lt;w:tblBorders&gt;&lt;w:top w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:left w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:bottom w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:right w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:insideH w:color=\"auto\" w:space=\"0\" w:sz=\"6\" w:val=\"single\"/&gt;&lt;w:insideV w:color=\"auto\" w:space=\"0\" w:sz=\"6\" w:val=\"single\"/&gt;&lt;/w:tblBorders&gt;&lt;w:tblLayout w:type=\"fixed\"/&gt;&lt;w:tblCellMar&gt;&lt;w:top w:type=\"dxa\" w:w=\"0\"/&gt;&lt;w:left w:type=\"dxa\" w:w=\"108\"/&gt;&lt;w:bottom w:type=\"dxa\" w:w=\"0\"/&gt;&lt;w:right w:type=\"dxa\" w:w=\"108\"/&gt;&lt;/w:tblCellMar&gt;&lt;/w:tblPrEx&gt;&lt;w:trPr&gt;&lt;w:trHeight w:hRule=\"atLeast\" w:val=\"302\"/&gt;&lt;/w:trPr&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"719\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + index + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"2682\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
+        .getMaterialName() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"1433\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
+            .getMaterialModel() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"813\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
+                .getUnit() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"813\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
+                    .getQuantity() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"756\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
+                        .getUnitPrice() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"816\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
+                            .getTotalCost() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"968\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
+                                .getRemark() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;/w:tr&gt;";
+    tbl_tr.append(tr);
+    index++;
+}
+</code></pre>
+</div>
+
+<p>最后生成pdf比较简单：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>OutputStream os = new FileOutputStream(destPath);
+Docx4J.toPDF(wordMLPackage, os);
+</code></pre>
+</div>
+
+<p>遇到了一个坑，就是生成pdf有点慢，在本地调试接口的时候每次都是响应时间都过了还没好，但放到服务器上就没有问题了。</p>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="//rsms.me/docx4j" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+
+  Share:
+  <!-- JiaThis Button BEGIN -->
+  <div class="jiathis_style">
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+  </div>
+  <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+  <!-- JiaThis Button END -->
+  
+  
+  </div>
+</div>
+
+<!-- During authoring, this automatically reloads the post as its changing -->
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
+    <!--/div-->
+    
+    
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  var n,i,L,cn,v = document.getElementsByTagName('pre');
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      if (cn.className.indexOf("none") !== -1 || cn.className.indexOf("txt") !== -1) {
+        cn.className = 'nohighlight';
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" media="all" href="/res/highlight.css" type="text/css">
+<script src="/res/highlight.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79224737-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <script>for (var k in window.initFuncs) { window.initFuncs[k](); } delete window.initFuncs;</script>
+  </body>
+</html>

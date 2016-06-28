@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <title>我的博客是怎么实现的 &mdash; 欧阳晗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- <link href='//fonts.googleapis.com/css?family=Poly:400' rel='stylesheet' type='text/css'> -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="Rasmus Andersson" href="/atom.xml">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="p:domain_verify" content="b3fb3041235fca06534c26184a7588bf"/>
+    
+    
+    <meta property="og:title" content="我的博客是怎么实现的">
+      
+      <meta name="description" content="我的博客是怎么实现的 Feb 19, 2016 我的博客呢，目前是基于github pages和jekyll运行的，除了域名花了点钱，别的都是free~ 所以说，只要有网页制作的基础再加上我这篇教程，有一个自己的网站并不是什么难事了呢。 需要知道的是： github：代码托管平台，代码都可以放在那里哦，再也不怕丢了。 github pages：在github创建一个特定的代码仓库，那么这里面的代码就可以生成自己的网站了。 jekyll：一个生成静态网页的工具，主要用于博客。 ps.我说的是不完整的，但是可以先暂且这么理解 那么思路是不是清晰了呢：在github上创建代码库，自己的电脑用jekyll生成静态网页，然后上传到代码库里，github pages就自动帮你生成网站了。或者你不需要jekyll，自己写静态网页，上传上去也是OK的啦。 安装github see this，不是我懒啊，我都先写了一遍，发现还是官方的好：P 安装jekyll see this，有疑问欢迎讨论嘿嘿嘿。 炫酷一点 找一些好看的模板，see this 评论用的是：disqus...">
+      <meta name="og:description" content="我的博客是怎么实现的 Feb 19, 2016 我的博客呢，目前是基于github pages和jekyll运行的，除了域名花了点钱，别的都是free~ 所以说，只要有网页制作的基础再加上我这篇教程，有一个自己的网站并不是什么难事了呢。 需要知道的是： github：代码托管平台，代码都可以放在那里哦，再也不怕丢了。 github pages：在github创建一个特定的代码仓库，那么这里面的代码就可以生成自己的网站了。 jekyll：一个生成静态网页的工具，主要用于博客。 ps.我说的是不完整的，但是可以先暂且这么理解 那么思路是不是清晰了呢：在github上创建代码库，自己的电脑用jekyll生成静态网页，然后上传到代码库里，github pages就自动帮你生成网站了。或者你不需要jekyll，自己写静态网页，上传上去也是OK的啦。 安装github see this，不是我懒啊，我都先写了一遍，发现还是官方的好：P 安装jekyll see this，有疑问欢迎讨论嘿嘿嘿。 炫酷一点 找一些好看的模板，see this 评论用的是：disqus...">
+      
+    
+    
+    
+    
+    <meta property="og:url" content="https://ouyanghan.com/myblog">
+    <meta property="og:site_name" content="ouyanghan.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2016-02-19">
+    
+    <script>window.initFuncs = [];</script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature.png" width="180" height="60" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+    
+    <h1>我的博客是怎么实现的</h1>
+    <info datetime="2016-02-19">
+      Feb 19, 2016
+    </info>
+    
+    <div class="body"><p>我的博客呢，目前是基于github pages和jekyll运行的，除了域名花了点钱，别的都是free~</p>
+
+<p>所以说，只要有网页制作的基础再加上我这篇教程，有一个自己的网站并不是什么难事了呢。</p>
+
+<h3 id="section">需要知道的是：</h3>
+
+<ul>
+  <li>github：代码托管平台，代码都可以放在那里哦，再也不怕丢了。</li>
+  <li>github pages：在github创建一个特定的代码仓库，那么这里面的代码就可以生成自己的网站了。</li>
+  <li>jekyll：一个生成静态网页的工具，主要用于博客。</li>
+  <li>ps.我说的是不完整的，但是可以先暂且这么理解</li>
+</ul>
+
+<p>那么思路是不是清晰了呢：在github上创建代码库，自己的电脑用jekyll生成静态网页，然后上传到代码库里，github pages就自动帮你生成网站了。或者你不需要jekyll，自己写静态网页，上传上去也是OK的啦。</p>
+
+<h2 id="github">安装github</h2>
+
+<p><a href="https://pages.github.com/">see this</a>，不是我懒啊，我都先写了一遍，发现还是官方的好：P</p>
+
+<h2 id="jekyll">安装jekyll</h2>
+
+<p><a href="http://jekyll-windows.juthilo.com/1-ruby-and-devkit/">see this</a>，有疑问欢迎讨论嘿嘿嘿。</p>
+
+<h2 id="section-1">炫酷一点</h2>
+
+<ul>
+  <li>找一些好看的模板，<a href="http://jekyllthemes.org/">see this</a></li>
+  <li>评论用的是：<a href="https://disqus.com/">disqus</a></li>
+  <li>分享用的是：<a href="http://www.jiathis.com/">JiaThis</a></li>
+  <li>站内搜索用的是：<a href="https://swiftype.com/">swiftype</a>，好像是只免费一段时间，先用着看吧。</li>
+</ul>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="//rsms.me/myblog" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+
+  Share:
+  <!-- JiaThis Button BEGIN -->
+  <div class="jiathis_style">
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+  </div>
+  <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+  <!-- JiaThis Button END -->
+  
+  
+  </div>
+</div>
+
+<!-- During authoring, this automatically reloads the post as its changing -->
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
+    <!--/div-->
+    
+    
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  var n,i,L,cn,v = document.getElementsByTagName('pre');
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      if (cn.className.indexOf("none") !== -1 || cn.className.indexOf("txt") !== -1) {
+        cn.className = 'nohighlight';
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" media="all" href="/res/highlight.css" type="text/css">
+<script src="/res/highlight.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79224737-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <script>for (var k in window.initFuncs) { window.initFuncs[k](); } delete window.initFuncs;</script>
+  </body>
+</html>
