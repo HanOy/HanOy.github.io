@@ -20,7 +20,15 @@
     var d = new Date, D = d.getDay(), iw = (D === 5 && d.getHours() > 17) || D > 5;
     if (is_weekend === iw) return;
     is_weekend = iw;
-    document.body.innerText = is_weekend ? 'YES' : 'Nope';
+    var div = document.body;
+    function setInnerText(element, text) {
+        if (typeof element.textContent == "string") {
+            element.textContent = text;
+        } else {
+            element.innerText = text;
+        }
+    }
+    setInnerText(div, is_weekend ? 'YES' : 'Nope');
     document.body.style.backgroundColor = is_weekend ? '#1dd97e' : '#5a5a5a';
     var N, n_yes_images = 5, n_no_images = 1;
     if (is_weekend) {
