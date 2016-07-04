@@ -17,7 +17,7 @@
   // Weekend = (Fri 17:00 -> Mon 00:00]
 
   var is_weekend, update = function() {
-    var d = new Date, D = d.getDay(), iw = (D === 5 && d.getHours() > 17) || D > 5;
+    var d = new Date, D = d.getDay(), iw = (D === 5 && d.getHours() > 17) || D === 6 || D === 0;
     if (is_weekend === iw) return;
     is_weekend = iw;
     var div = document.body;
