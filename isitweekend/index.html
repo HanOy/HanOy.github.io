@@ -34,9 +34,13 @@
     if (is_weekend) {
       N = Math.random() * (n_yes_images-1);
       document.body.style.backgroundImage = 'url(yes'+(N < 10 ? '0'+N.toFixed(0) : N.toFixed(0))+'.gif)';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundPosition = 'center';
     } else {
       N = n_no_images > 1 ? Math.random() * (n_no_images-1) : 0;
       document.body.style.backgroundImage = 'url(no'+(N < 10 ? '0'+N.toFixed(0) : N.toFixed(0))+'.gif)';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundPosition = 'center';
     }
   };
   setInterval(update, 1000);
