@@ -9,6 +9,7 @@
           background-size: 20rem 20rem;
           background-position: center 0;
           -webkit-animation: bg 2s linear infinite;
+          animation: bg 2s linear infinite;
           overflow: hidden;
         }
         .ship {
@@ -21,6 +22,7 @@
           height: 3rem;
           margin: auto;
           -webkit-animation: move 2s linear infinite alternate;
+          animation: move 2s linear infinite alternate;
         }
         .body {
           position: relative;
@@ -37,6 +39,7 @@
           top: 1.5rem;
           left: 1rem;
           -webkit-animation: eyes 2s ease-in-out infinite alternate;
+          animation: eyes 2s ease-in-out infinite alternate;
         }
         .eye_1, .eye_2 {
           position: absolute;
@@ -46,6 +49,7 @@
           border-radius: 50%;
           background-color: #163040;
           -webkit-animation: eye 2s ease-in-out infinite alternate;
+          animation: eye 2s ease-in-out infinite alternate;
         }
         .eye_2 {
           right: 0;
@@ -61,6 +65,7 @@
         }
         .foot_1 {
            -webkit-transform: rotate(25deg);
+           transform: rotate(25deg);
         }
         .foot_2 {
           top: 2rem;
@@ -71,6 +76,7 @@
          }
         .foot_3 {
           -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
           right: 0;
           background: linear-gradient(rgba(227, 227, 227, 0.6), rgba(227, 227, 227, 0.3));
         }
@@ -89,9 +95,12 @@
           stroke-linejoin: round;
           stroke-dasharray: 2;
           -webkit-animation: wave 2s infinite linear;
+          animation: wave 2s infinite linear;
           opacity: 0;
           -webkit-transform-origin: center;
+          transform-origin: center;
           -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
         }
         .wave_2 {
           -webkit-animation-delay: 1s;
