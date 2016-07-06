@@ -116,6 +116,26 @@
           50% { -webkit-transform: scaleY(0)}
           60% { -webkit-transform: scaleY(1)}
         }
+        @keyframes wave {
+          from { transform: scale(0.45) rotate(0); opacity: 1; }
+          to { transform: scale(1) rotate(20deg); opacity: 0;}
+        }
+        @keyframes move {
+          from { transform: rotate(-10deg);}
+          to { transform: rotate(10deg);}
+        }
+        @keyframes bg {
+          to { background-position: center 20rem;}
+        }
+        @keyframes eyes {
+          from { transform: translateX(-0.4rem)}
+          to { transform: translateX(0.4rem)}
+        }
+        @keyframes eye {
+          40% { transform: scaleY(1)}
+          50% { transform: scaleY(0)}
+          60% { transform: scaleY(1)}
+        }
     </style>
 </head>
 <body>
