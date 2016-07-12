@@ -150,11 +150,39 @@ permalink: /404.html
           50% { transform: scaleY(0)}
           60% { transform: scaleY(1)}
         }
+        /* header */
+header {
+  display: block;
+  height: 100px;
+  margin:0 60px 0 50px;
+  color: #ccc;
+}
+  header h1 {
+    display: block;
+    height: 50px;
+    margin:30px 0 0 0;
+    float: left;
+  }
+    header h1 a {
+      display:inline-block;
+      -webkit-transform: translate3d(0,0,0);
+      -webkit-transition: 160ms -webkit-transform ease-out;
+    }
+    header h1 a:hover {
+      -webkit-transform: translate3d(0,2px,0);
+  /*    -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);*/
+      cursor:pointer;
+    }
+    header h1 img { display:block; float:left; }
     </style>
   </head>
   <body>
+  <header>
+  <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature.png" width="200" height="80 " alt="Signature"></a></h1>
+</header>
     <div class="ship">
-  <div class="body">
+    <div class="body">
     <div class="eyes">
       <span class="eye_1"></span>
       <span class="eye_2"></span>
