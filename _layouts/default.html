@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#" xmlns:wb="http://open.weibo.com/wb">
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}欧阳晗</title>
@@ -22,6 +22,7 @@
     {% if page.ios_app_name %}
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta property="wb:webmaster" content="c386270be418f8d5" />
     {% endif %}
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
@@ -48,6 +49,9 @@
     <meta property="og:locale" content="zh_CN" />
     {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+    {% endif %}
+    {% if page.follow_button %}
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
     {% endif %}
     <script>window.initFuncs = [];</script>
   </head>
