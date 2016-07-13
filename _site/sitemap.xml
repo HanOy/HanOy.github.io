@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://ouyanghan.com/</loc>
-    <lastmod>2016-07-12T17:35:59+08:00</lastmod>
+    <lastmod>2016-07-13T13:11:32+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://ouyanghan.com/about/</loc>
-    <lastmod>2016-07-12T17:35:59+08:00</lastmod>
+    <lastmod>2016-07-13T13:11:32+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://ouyanghan.com/archive/</loc>
-    <lastmod>2016-07-12T17:35:59+08:00</lastmod>
+    <lastmod>2016-07-13T13:11:32+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   
+  <url>
+    <loc>http://ouyanghan.com/pokemango</loc>
+    <lastmod>2016-07-13T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+   </url>
+   
   <url>
     <loc>http://ouyanghan.com/mood</loc>
     <lastmod>2016-06-13T00:00:00+08:00</lastmod>
