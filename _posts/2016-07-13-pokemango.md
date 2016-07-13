@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pokeman go国内还是算了吧
+title: 聊聊pokeman go
 date: 2016-07-13
 tags: Chinese
 category: blog
