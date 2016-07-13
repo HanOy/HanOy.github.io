@@ -27,7 +27,7 @@ LBS
 
 AR
 ---
-来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app[随便走](http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba)，基于AR+LBS的导航，也是挺有意思的。
+来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app[随便走](http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba)，基于AR+LBS的导航，也是挺有意思的。还有宜家的app[家居指南](http://www.ikea.com/ms/zh_CN/campaigns/catalogue_2016/index.html)，可以把虚拟家具直接放在家里看效果，cool~
 
 <img src="/res/pokemango2.jpg" width="220" height="380"/>
 
