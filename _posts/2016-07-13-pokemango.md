@@ -27,8 +27,8 @@ LBS
 
 AR
 ---
-<img src="/res/pokemango2.jpg" width="220" height="380" align="right"/>
+来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app[随便走](http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba)，基于AR+LBS的导航，也是挺有意思的。
 
-来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app[随便走](http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba)→，基于AR+LBS的导航，也是挺有意思的。
+<img src="/res/pokemango2.jpg" width="220" height="380"/>
 
 所以！对于中国市场来说，种菜偷菜才是用户需求痛点！在地图上，有着各种各样的蔬菜，为了获得菜，玩家们乐此不疲的走出家门，奔赴一个又一个的菜点。对于标志性建筑还可以设置为菜园子，贡献度高的玩家可以成为至高无上的地主！2.0版本还支持斗地主！玩法极多，相信一定可以在国内击败pokeman go。好了，现在就差钱开工了，有老板想投资的吗？
