@@ -3,12 +3,41 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2016-08-05T13:35:38+08:00</updated>
+  <updated>2016-08-05T17:28:24+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
     <email>oyh3745@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>试一下phonegap</title>
+    <link href="http://ouyanghan.com/phonegap"/>
+    <updated>2016-07-13T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/phonegap</id>
+    <content type="html">&lt;p&gt;这是&lt;a href=&quot;http://ouyanghan.com/2048&quot;&gt;H5的2048&lt;/a&gt;，今天拉屎的时候感觉浏览器上运行操作手感还是太膈应了。so，今天尝试用phonegap把它转成了apk，果然流畅了很多，一下就突破了最高分纪录: )&lt;/p&gt;
+
+&lt;p&gt;在这里稍微记录下用phonegap的感受，其实也就是看着官网&lt;a href=&quot;http://phonegap.com&quot;&gt;phonegap.com&lt;/a&gt;的Get Started一步一步就好了。&lt;/p&gt;
+
+&lt;p&gt;先抄一下百度百科，PhoneGap是一个用基于HTML，CSS和JavaScript的，创建移动跨平台移动应用程序的快速开发平台。&lt;/p&gt;
+
+&lt;p&gt;步骤如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在电脑上装一个app&lt;/li&gt;
+  &lt;li&gt;在手机上装一个app&lt;/li&gt;
+  &lt;li&gt;新建一个phonegap项目，把html、js等放进去&lt;/li&gt;
+  &lt;li&gt;启动这个项目&lt;/li&gt;
+  &lt;li&gt;手机app连接这个项目便可以直接看效果了&lt;/li&gt;
+  &lt;li&gt;然后打包用的是官网的打包服务&lt;/li&gt;
+  &lt;li&gt;打包后下载安装就好了，太特么强大了。。。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>拯救世界还是挣钱</title>
