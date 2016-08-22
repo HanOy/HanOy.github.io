@@ -64,6 +64,27 @@
 			</div>
 		</div>
 	</div>
-
+	<br>
+	<audio id="bgmusic" src="http://www.w3school.com.cn/i/song.mp3" autoplay preload loop controls></audio>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script>
+    // 通过config接口注入权限验证配置后, 在 ready 中 play 一下 audio
+    function autoPlayAudio() {
+        wx.config({
+            // 配置信息, 即使不正确也能使用 wx.ready
+            debug: false,
+            appId: '',
+            timestamp: 1,
+            nonceStr: '',
+            signature: '',
+            jsApiList: []
+        });
+        wx.ready(function() {
+            document.getElementById('bgmusic').play();
+        });
+    }
+    
+    autoPlayAudio(); 
+    </script>
 </body>
 </html>
