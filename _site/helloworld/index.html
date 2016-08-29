@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script>
+      function initialize() {
+        var earth = new WE.map('earth_div');
+        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+          attribution: '© OpenStreetMap contributors'
+        }).addTo(earth);
+
+		var marker = WE.marker([31.198248, 121.448596]).addTo(earth);
+        marker.bindPopup("<b>Hello world!</b><br>I am here.<br />", {maxWidth: 150, closeButton: true});
+
+        var marker = WE.marker([26.053351, 113.037404]).addTo(earth);
+        marker.bindPopup("<b>where I am grow up.<br />", {maxWidth: 150, closeButton: true});
+
+      }
+    </script>
+    <style>
+      html, body{padding: 0; margin: 0;}
+      #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
+    </style>
+    <title>WebGL Earth API: Hello World</title>
+  </head>
+  <body onload="initialize()">
+    <div id="earth_div"></div>
+  </body>
+</html>
