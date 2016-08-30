@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#" xmlns:wb="http://open.weibo.com/wb">
+  <head>
+    <meta charset="utf-8">
+    <title>试一下WebGL &mdash; 欧阳晗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="wb:webmaster" content="c386270be418f8d5" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- <link href='//fonts.googleapis.com/css?family=Poly:400' rel='stylesheet' type='text/css'> -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="ouyanghan" href="/atom.xml">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/apple-touch-icon-114x114-precomposed.png">
+    <meta name="p:domain_verify" content="b3fb3041235fca06534c26184a7588bf"/>
+    
+    
+    <meta property="og:title" content="试一下WebGL">
+      
+      <meta name="description" content="无意中逛到一个超炫酷的个人网站，问了公司的H5才知道实现这样用的是WebGL。">
+      <meta name="og:description" content="无意中逛到一个超炫酷的个人网站，问了公司的H5才知道实现这样用的是WebGL。">
+      
+    
+    
+    
+    
+    <meta property="og:url" content="https://ouyanghan.com/webgl">
+    <meta property="og:site_name" content="ouyanghan.com">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN" />
+    
+    <meta property="article:published_time" content="2016-08-30">
+    
+    
+    <script>window.initFuncs = [];</script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature.png" width="180" height="60" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+    
+    <h1>试一下WebGL</h1>
+    <info datetime="2016-08-30">
+      Aug 30, 2016
+    </info>
+    
+    <div class="body"><p>无意中逛到一个超炫酷的个人网站：<a href="http://mystaticself.com/">http://mystaticself.com/</a> （貌似需要翻墙）问了公司的H5才知道实现这样用的是WebGL。</p>
+
+<p>维基百科：WebGL是一项利用JavaScript API渲染交互式3D电脑图形和2D图形的技术，可兼容任何的网页浏览器，无需加装插件。通过WebGL的技术，只需要编写网页代码即可实现3D图像的展示。</p>
+
+<p>本着炫酷故我在的精神，当然要研究一番，但是发现水不是一般深呢，三两天的功夫都不能做到那个大神的程度的十分之一。</p>
+
+<p>接着找到一个封装过的3D的地球API：<a href="http://www.webglearth.org/">WebGL Earth</a> 封装的挺简单的，官网也说的比较详细，然后自己玩了一番。</p>
+
+<p>效果图：
+<img src="/res/world.jpg" width="280" height="480" /></p>
+
+<p>代码：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://www.webglearth.com/v2/api.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+    	<span class="kd">var</span> <span class="nx">earth</span><span class="p">;</span>
+    	<span class="kd">var</span> <span class="nx">marker</span><span class="p">;</span>
+      <span class="kd">function</span> <span class="nx">initialize</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">earth</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WE</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">'earth_div'</span><span class="p">,{</span>
+        	<span class="na">atmosphere</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+        	<span class="na">sky</span><span class="p">:</span><span class="kc">true</span>
+        <span class="p">});</span>
+        <span class="nx">WE</span><span class="p">.</span><span class="nx">tileLayer</span><span class="p">(</span><span class="s1">'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'</span><span class="p">,{</span>
+          <span class="na">attribution</span><span class="p">:</span> <span class="s1">'© OpenStreetMap contributors'</span>
+        <span class="p">}).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">earth</span><span class="p">);</span>
+
+		<span class="nx">marker</span> <span class="o">=</span> <span class="nx">WE</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="mf">31.198248</span><span class="p">,</span> <span class="mf">121.448596</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">earth</span><span class="p">);</span>
+        <span class="nx">marker</span><span class="p">.</span><span class="nx">bindPopup</span><span class="p">(</span><span class="s2">"&lt;b&gt;Hello world!&lt;/b&gt;&lt;br&gt;I am here.&lt;br /&gt;"</span><span class="p">,</span> <span class="p">{</span><span class="na">maxWidth</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="na">closeButton</span><span class="p">:</span> <span class="kc">true</span><span class="p">});</span>
+
+        <span class="kd">var</span> <span class="nx">marker1</span> <span class="o">=</span> <span class="nx">WE</span><span class="p">.</span><span class="nx">marker</span><span class="p">([</span><span class="mf">26.053351</span><span class="p">,</span> <span class="mf">113.037404</span><span class="p">]).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">earth</span><span class="p">);</span>
+        <span class="nx">marker1</span><span class="p">.</span><span class="nx">bindPopup</span><span class="p">(</span><span class="s2">"&lt;b&gt;where I grow up.&lt;br /&gt;"</span><span class="p">,</span> <span class="p">{</span><span class="na">maxWidth</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="na">closeButton</span><span class="p">:</span> <span class="kc">true</span><span class="p">});</span>
+
+        <span class="nx">earth</span><span class="p">.</span><span class="nx">setView</span><span class="p">([</span><span class="mf">34.262278</span><span class="p">,</span> <span class="mf">103.628637</span><span class="p">],</span> <span class="mi">3</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="kd">function</span> <span class="nx">flyToMe</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">earth</span><span class="p">.</span><span class="nx">panInsideBounds</span><span class="p">([</span><span class="mf">31.056144060646687</span><span class="p">,</span> <span class="mf">31.38522435978879</span><span class="p">,</span> <span class="mf">120.78966784638101</span><span class="p">,</span> <span class="mf">122.19440192910949</span><span class="p">])</span>
+        <span class="c1">//earth.panTo([31.198248, 121.448596]);</span>
+        <span class="nx">marker</span><span class="p">.</span><span class="nx">openPopup</span><span class="p">();</span>
+      <span class="p">}</span>
+      <span class="kd">function</span> <span class="nx">back</span><span class="p">()</span> <span class="p">{</span>
+      	<span class="c1">//earth.setView([34.262278, 103.628637], 3);</span>
+      	<span class="nx">earth</span><span class="p">.</span><span class="nx">panInsideBounds</span><span class="p">([</span><span class="mf">10.32268236188567</span><span class="p">,</span> <span class="mf">48.86931220325214</span><span class="p">,</span> <span class="mf">63.53559837081185</span><span class="p">,</span> <span class="mf">143.72167565826413</span><span class="p">])</span>
+      	<span class="nx">marker</span><span class="p">.</span><span class="nx">closePopup</span><span class="p">();</span>
+      	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">earth</span><span class="p">.</span><span class="nx">getBounds</span><span class="p">());</span>
+      <span class="p">}</span>
+    <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;style&gt;</span>
+      <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span><span class="p">{</span><span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;}</span>
+      <span class="nf">#earth_div</span><span class="p">{</span><span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span> <span class="cp">!important</span><span class="p">;}</span>
+      <span class="nf">#buttons</span> <span class="p">{</span><span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span> <span class="nl">top</span><span class="p">:</span><span class="m">50px</span><span class="p">;</span> <span class="nl">left</span><span class="p">:</span> <span class="m">50px</span><span class="p">;}</span>
+    <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;title&gt;</span>欧阳晗-WebGL Earth API: Hello World<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"initialize()"</span><span class="nt">&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">'wx_logo'</span> <span class="na">style=</span><span class="s">'margin:0 auto;display:none;'</span><span class="nt">&gt;</span>
+    	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../favicon.jpg"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"earth_div"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Fly to Me"</span> <span class="na">onclick=</span><span class="s">"flyToMe();"</span> <span class="na">style=</span><span class="s">"width:120px;height:40px;border:2px #9999FF dashed;"</span><span class="nt">&gt;&lt;br&gt;&lt;br&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"back"</span> <span class="na">onclick=</span><span class="s">"back();"</span> <span class="na">style=</span><span class="s">"width:120px;height:40px;border:2px #9999FF dashed;"</span><span class="nt">&gt;&lt;br&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="//rsms.me/webgl" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+
+  
+    Share:
+    <!-- JiaThis Button BEGIN -->
+    <div class="jiathis_style">
+      <a class="jiathis_button_tsina"></a>
+      <a class="jiathis_button_weixin"></a>
+      <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+  
+
+  
+    <br>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      window.disqus_identifier = "/webgl";
+    </script>
+    <script async src="//hunch.disqus.com/embed.js"></script>
+    <noscript>Please enable JavaScript to view the
+      <a href="http://disqus.com/?ref_noscript=hunch">comments powered by Disqus.</a>
+    </noscript>
+    <script>
+// Disqus
+var disqus_shortname = 'ouyanghan';
+if (!window.disqus_url) window.disqus_url = "http://ouyanghan.com/webgl";
+if (!window.disqus_title) window.disqus_title = document.title;
+(function(){try{
+// this hack takes care of formatting # comments
+var v = document.getElementsByClassName('dsq-comment-count');
+var loaded = false;
+var polle;
+for (var i=0;i<v.length;i++) {
+  var e = v.item(i);
+  if (e.firstChild.nodeValue === '-') {
+    polle = e.firstChild;
+    break;
+  }
+}
+function onload() {
+  for (var i=0;i<v.length;i++) {
+    var e = v.item(i);
+    if (e.firstChild.nodeValue !== '0 and 0') {
+      var m = e.firstChild.nodeValue.split(' ');
+      e.firstChild.nodeValue = String(parseInt(m[0]) + parseInt(m[2]));
+      e.style.display = 'inline';
+    }
+  }
+}
+if (polle) {
+  var timer = setInterval(function(){
+    if (polle.nodeValue !== '-') { clearInterval(timer); onload(); }
+  },100);
+}
+}catch(e){}})();
+</script>
+<script async src="http://disqus.com/forums/hunch/count.js"></script>
+
+  
+  </div>
+</div>
+
+<!-- During authoring, this automatically reloads the post as its changing -->
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
+    <!--/div-->
+    
+    
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  var n,i,L,cn,v = document.getElementsByTagName('pre');
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      if (cn.className.indexOf("none") !== -1 || cn.className.indexOf("txt") !== -1) {
+        cn.className = 'nohighlight';
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" media="all" href="/res/highlight.css" type="text/css">
+<script src="/res/highlight.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79224737-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <script>for (var k in window.initFuncs) { window.initFuncs[k](); } delete window.initFuncs;</script>
+  </body>
+</html>
