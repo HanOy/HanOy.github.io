@@ -3,24 +3,34 @@
   <head>
     <script src="http://www.webglearth.com/v2/api.js"></script>
     <script>
+    	var earth;
+    	var marker;
       function initialize() {
-        var earth = new WE.map('earth_div');
+        earth = new WE.map('earth_div',{
+        	atmosphere:true,
+        	sky:true
+        });
         WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
           attribution: '© OpenStreetMap contributors'
         }).addTo(earth);
 
-		var marker = WE.marker([31.198248, 121.448596]).addTo(earth);
-        marker.bindPopup("<b>Hello world!</b><br>I am here.<br />", {maxWidth: 100, closeButton: true}).openPopup();
+		marker = WE.marker([31.198248, 121.448596]).addTo(earth);
+        marker.bindPopup("<b>Hello world!</b><br>I am here.<br />", {maxWidth: 100, closeButton: true});
 
-        var marker = WE.marker([26.053351, 113.037404]).addTo(earth);
-        marker.bindPopup("<b>where I grow up.<br />", {maxWidth: 100, closeButton: true});
+        var marker1 = WE.marker([26.053351, 113.037404]).addTo(earth);
+        marker1.bindPopup("<b>where I grow up.<br />", {maxWidth: 100, closeButton: true});
 
         earth.setView([34.262278, 103.628637], 3);
+      }
+      function flyToMe() {
+        earth.panTo([31.198248, 121.448596]);
+        marker.openPopup();
       }
     </script>
     <style>
       html, body{padding: 0; margin: 0;}
       #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
+      #buttons {position: absolute; top:10px; left: 10px;}
     </style>
     <title>欧阳晗-WebGL Earth API: Hello World</title>
   </head>
@@ -29,5 +39,8 @@
     	<img src="../favicon.jpg" />
 	</div>
     <div id="earth_div"></div>
+    <div id="buttons">
+      <input type="button" value="Fly to Me" onclick="flyToMe();"><br>
+    </div>
   </body>
 </html>
