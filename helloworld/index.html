@@ -23,12 +23,15 @@
         earth.setView([34.262278, 103.628637], 3);
       }
       function flyToMe() {
-        earth.panTo([31.198248, 121.448596]);
+        earth.panInsideBounds([31.056144060646687, 31.38522435978879, 120.78966784638101, 122.19440192910949])
+        //earth.panTo([31.198248, 121.448596]);
         marker.openPopup();
       }
       function back() {
-      	earth.setView([34.262278, 103.628637], 3);
+      	//earth.setView([34.262278, 103.628637], 3);
+      	earth.panInsideBounds([10.32268236188567, 48.86931220325214, 63.53559837081185, 143.72167565826413])
       	marker.closePopup();
+      	console.log(earth.getBounds());
       }
     </script>
     <style>
