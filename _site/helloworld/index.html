@@ -26,11 +26,15 @@
         earth.panTo([31.198248, 121.448596]);
         marker.openPopup();
       }
+      function back() {
+      	earth.setView([34.262278, 103.628637], 3);
+      	marker.closePopup();
+      }
     </script>
     <style>
       html, body{padding: 0; margin: 0;}
       #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
-      #buttons {position: absolute; top:10px; left: 10px;}
+      #buttons {position: absolute; top:50px; left: 50px;}
     </style>
     <title>欧阳晗-WebGL Earth API: Hello World</title>
   </head>
@@ -40,7 +44,8 @@
 	</div>
     <div id="earth_div"></div>
     <div id="buttons">
-      <input type="button" value="Fly to Me" onclick="flyToMe();"><br>
+      <input type="button" value="Fly to Me" onclick="flyToMe();"><br><br>
+      <input type="button" value="back" onclick="back();"><br>
     </div>
   </body>
 </html>
