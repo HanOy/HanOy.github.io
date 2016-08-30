@@ -10,10 +10,10 @@
         }).addTo(earth);
 
 		var marker = WE.marker([31.198248, 121.448596]).addTo(earth);
-        marker.bindPopup("<b>Hello world!</b><br>I am here.<br />", {maxWidth: 150, closeButton: true});
+        marker.bindPopup("<b>Hello world!</b><br>I am here.<br />", {maxWidth: 100, closeButton: true}).openPopup();
 
         var marker = WE.marker([26.053351, 113.037404]).addTo(earth);
-        marker.bindPopup("<b>where I grow up.<br />", {maxWidth: 150, closeButton: true});
+        marker.bindPopup("<b>where I grow up.<br />", {maxWidth: 100, closeButton: true});
 
         earth.setView([34.262278, 103.628637], 3);
       }
