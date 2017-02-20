@@ -3,12 +3,43 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2017-01-23T10:32:31+08:00</updated>
+  <updated>2017-02-20T17:41:08+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
     <email>oyh3745@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>瞧一瞧看一看，国内的互联网车车</title>
+    <link href="http://ouyanghan.com/car"/>
+    <updated>2016-09-06T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/car</id>
+    <content type="html">&lt;hr /&gt;
+&lt;p&gt;LeSEE乐视超级汽车
+http://lesee.leeco.com/&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;蔚来汽车
+http://www.nio.com/&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;小鹏汽车
+https://www.xiaopeng.com/#page1&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;奇点汽车
+http://www.zhicheauto.com/&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;车和家
+https://www.chehejia.com/&lt;/p&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>试一下WebGL</title>
@@ -503,23 +534,6 @@ ON DUPLICATE KEY UPDATE
   &lt;li&gt;分享用的是：&lt;a href=&quot;http://www.jiathis.com/&quot;&gt;JiaThis&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;站内搜索用的是：&lt;a href=&quot;https://swiftype.com/&quot;&gt;swiftype&lt;/a&gt;，好像是只免费一段时间，先用着看吧。&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>测试</title>
-    <link href="http://ouyanghan.com/test"/>
-    <updated>2016-02-15T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/test</id>
-    <content type="html">&lt;p&gt;测试一下咯&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;测试&lt;/h2&gt;
-
-&lt;p&gt;嘿嘿嘿。&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
