@@ -3,12 +3,63 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2017-02-21T10:50:15+08:00</updated>
+  <updated>2017-03-10T14:09:16+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
     <email>oyh3745@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>记一个兼容性问题</title>
+    <link href="http://ouyanghan.com/iosIframeProblem"/>
+    <updated>2017-03-10T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/iosIframeProblem</id>
+    <content type="html">&lt;p&gt;故事的起因是这样的：主角是一个搜索框，它在安卓中、网页浏览器中工作的好好的。可是它却在iphone中闹起了情绪。并且这个页面嵌在iframe中的时候才会出现这个问题。&lt;/p&gt;
+
+&lt;p&gt;点击搜索后强行将input焦点移出来也并不管用：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(&#39;searchBtn&#39;).click(function() {
+	$(&#39;input&#39;).blur();	
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;问题出在使用了神奇的iframe上，这个时候就要派出更神奇的$(window)了：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;step-1&quot;&gt;step 1&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var inputFocused = false;
+$(&#39;input&#39;).focus(function() {
+    setTimeout(function() {
+        inputFocused = true;
+    },100);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;step-2&quot;&gt;step 2&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(window).click(function() {
+    if(inputFocused == true) {
+        $(window).focus();
+        $(&#39;input&#39;).blur();
+        inputFocused = false;
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;至于为什么要加setTimeOut方法是因为 $(window).click()事件包括了屏幕上所有的点击，所以要让inputFocused为true有一些延迟咯 :)&lt;/p&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>瞧一瞧看一看，国内的互联网车车</title>
@@ -491,49 +542,6 @@ ON DUPLICATE KEY UPDATE
 
 &lt;p&gt;要注意的是：还是需要主键或索引的。&lt;/p&gt;
 
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>我的博客是怎么实现的</title>
-    <link href="http://ouyanghan.com/myblog"/>
-    <updated>2016-02-19T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/myblog</id>
-    <content type="html">&lt;p&gt;我的博客呢，目前是基于github pages和jekyll运行的，除了域名花了点钱，别的都是free~&lt;/p&gt;
-
-&lt;p&gt;所以说，只要有网页制作的基础再加上我这篇教程，有一个自己的网站并不是什么难事了呢。&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;需要知道的是：&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;github：代码托管平台，代码都可以放在那里哦，再也不怕丢了。&lt;/li&gt;
-  &lt;li&gt;github pages：在github创建一个特定的代码仓库，那么这里面的代码就可以生成自己的网站了。&lt;/li&gt;
-  &lt;li&gt;jekyll：一个生成静态网页的工具，主要用于博客。&lt;/li&gt;
-  &lt;li&gt;ps.我说的是不完整的，但是可以先暂且这么理解&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;那么思路是不是清晰了呢：在github上创建代码库，自己的电脑用jekyll生成静态网页，然后上传到代码库里，github pages就自动帮你生成网站了。或者你不需要jekyll，自己写静态网页，上传上去也是OK的啦。&lt;/p&gt;
-
-&lt;h2 id=&quot;github&quot;&gt;安装github&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;see this&lt;/a&gt;，不是我懒啊，我都先写了一遍，发现还是官方的好：P&lt;/p&gt;
-
-&lt;h2 id=&quot;jekyll&quot;&gt;安装jekyll&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyll-windows.juthilo.com/1-ruby-and-devkit/&quot;&gt;see this&lt;/a&gt;，有疑问欢迎讨论嘿嘿嘿。&lt;/p&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;炫酷一点&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;找一些好看的模板，&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;see this&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;评论用的是：&lt;a href=&quot;https://disqus.com/&quot;&gt;disqus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;分享用的是：&lt;a href=&quot;http://www.jiathis.com/&quot;&gt;JiaThis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;站内搜索用的是：&lt;a href=&quot;https://swiftype.com/&quot;&gt;swiftype&lt;/a&gt;，好像是只免费一段时间，先用着看吧。&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     <author>
       <name>ouyanghan</name>
