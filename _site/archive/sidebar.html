@@ -22,8 +22,8 @@
     
     <meta property="og:title" content="Archive (sidebar)">
       
-      <meta name="description" content="Photography Archive About me Recent posts 试一下WebGL Aug 30, 2016 试一下phonegap Jul 13, 2016 拯救世界还是挣钱 Jul 13, 2016 聊聊pokeman go Jul 13, 2016 冲动是可以用写代码来抑制的吧 Jun...">
-      <meta name="og:description" content="Photography Archive About me Recent posts 试一下WebGL Aug 30, 2016 试一下phonegap Jul 13, 2016 拯救世界还是挣钱 Jul 13, 2016 聊聊pokeman go Jul 13, 2016 冲动是可以用写代码来抑制的吧 Jun...">
+      <meta name="description" content="Photography Archive About me Recent posts 记一个兼容性问题 Mar 10, 2017 瞧一瞧看一看，国内的互联网车车 Sep 06, 2016 试一下WebGL Aug 30, 2016 试一下phonegap Jul 13, 2016 拯救世界还是挣钱 Jul 13,...">
+      <meta name="og:description" content="Photography Archive About me Recent posts 记一个兼容性问题 Mar 10, 2017 瞧一瞧看一看，国内的互联网车车 Sep 06, 2016 试一下WebGL Aug 30, 2016 试一下phonegap Jul 13, 2016 拯救世界还是挣钱 Jul 13,...">
       
     
     
@@ -41,9 +41,10 @@
     <header>
       <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="/res/signature.png" width="180" height="60" alt="Signature"></a></h1>
       <ul class="navigation">
-        <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/photos/" title="A selection of recent photography" style="text-decoration: line-through;">拍的照啥的</a></li>
         <li><a href="/archive/"class="active" title="Archived articles">Archive</a></li>
         <li><a href="/about/">About me</a></li>
+        <li><a href="/weibo/">我的微勃</a></li>
       </ul>
     </header>
     <!--div class="wrapper content"-->
@@ -100,6 +101,20 @@
 </ul>
 <p class="h"><b>Recent posts</b></p>
 <ul>
+
+  <li class="posts">
+    <a onclick="return openInParent(this)" target="_top" href="/iosIframeProblem">
+      <span>记一个兼容性问题</span>
+      <info>Mar 10, 2017</info>
+    </a>
+  </li>
+
+  <li class="posts">
+    <a onclick="return openInParent(this)" target="_top" href="/car">
+      <span>瞧一瞧看一看，国内的互联网车车</span>
+      <info>Sep 06, 2016</info>
+    </a>
+  </li>
 
   <li class="posts">
     <a onclick="return openInParent(this)" target="_top" href="/webgl">

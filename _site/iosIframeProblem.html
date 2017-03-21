@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: http://ogp.me/ns#" xmlns:wb="http://open.weibo.com/wb">
   <head>
     <meta charset="utf-8">
-    <title>聊聊pokeman go &mdash; 欧阳晗</title>
+    <title>记一个兼容性问题 &mdash; 欧阳晗</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="wb:webmaster" content="c386270be418f8d5" />
     
@@ -22,21 +22,21 @@
     <meta name="p:domain_verify" content="b3fb3041235fca06534c26184a7588bf"/>
     
     
-    <meta property="og:title" content="聊聊pokeman go">
+    <meta property="og:title" content="记一个兼容性问题">
       
-      <meta name="description" content="任天堂、精灵宝可梦、Niantic合作推出的Pokemon Go《口袋妖怪Go》最近火的一塌糊涂。">
-      <meta name="og:description" content="任天堂、精灵宝可梦、Niantic合作推出的Pokemon Go《口袋妖怪Go》最近火的一塌糊涂。">
+      <meta name="description" content="iframe中焦点移出输入框iphone键盘却没有隐藏">
+      <meta name="og:description" content="iframe中焦点移出输入框iphone键盘却没有隐藏">
       
     
     
     
     
-    <meta property="og:url" content="https://ouyanghan.com/pokemango">
+    <meta property="og:url" content="https://ouyanghan.com/iosIframeProblem">
     <meta property="og:site_name" content="ouyanghan.com">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="zh_CN" />
     
-    <meta property="article:published_time" content="2016-07-13">
+    <meta property="article:published_time" content="2017-03-10">
     
     
     <script>window.initFuncs = [];</script>
@@ -55,39 +55,55 @@
       <div class="content">
   <div class="post single">
     
-    <h1>聊聊pokeman go</h1>
-    <info datetime="2016-07-13">
-      Jul 13, 2016
+    <h1>记一个兼容性问题</h1>
+    <info datetime="2017-03-10">
+      Mar 10, 2017
     </info>
     
-    <div class="body"><p>任天堂、精灵宝可梦、Niantic合作推出的Pokemon Go《口袋妖怪Go》最近火的一塌糊涂。</p>
+    <div class="body"><p>故事的起因是这样的：主角是一个搜索框，它在安卓中、网页浏览器中工作的好好的。可是它却在iphone中闹起了情绪。并且这个页面嵌在iframe中的时候才会出现这个问题。</p>
 
-<p>虽然那个锁区的长方形框住了上海，抓不了小精灵，我还是把它给下下来感受了一把，毕竟还有新手教程可以抓一只妙蛙种子呢:P</p>
+<p>点击搜索后强行将input焦点移出来也并不管用：</p>
 
-<p>打开游戏，开启定位功能之后，游戏会在摄像头实时拍摄的画面中叠加小精灵，这些精灵可能会藏在任何角落，你需要拿着手机四处走动，发现它并且抓住它。不得不说打开了游戏方式新的大门。基于的技术呢主要就是AR（增强现实，简单说就是虚拟的小精灵套在现实世界）和LBS（基于位置服务，简单说就是定位）。</p>
-
-<h2 id="lbs">LBS</h2>
-<p>先来看看LBS，国内最完备的无非就是百度地图和高德地图咯，但是pokeman go却是基于google地图的。2010年谷歌退出中国了，地图不准是应该的，但游戏地图里的数据居然会这么不准确！！当你真的去玩了就知道游戏里的地图是多么不准确了。给大家看看我截下来的图。。这可是上海徐家汇附近，不是什么犄角旮旯的地方。</p>
-<div>
-	<img src="/res/pokemango.jpg" width="210" height="360" style="display:inline-block;vertical-align:right" />
-	<img src="/res/pokeman3.jpg" width="280" height="360" style="display:inline-block;vertical-align:left" />
+<div class="highlighter-rouge"><pre class="highlight"><code>$('searchBtn').click(function() {
+	$('input').blur();	
+})
+</code></pre>
 </div>
 
-<p>当你走到游戏地图的湖边想抓一只水系的小精灵，但是发现这里早已是一幢高楼，这个游戏体验得摔手机了。</p>
+<p>问题出在使用了神奇的iframe上，这个时候就要派出更神奇的$(window)了：</p>
 
-<h2 id="ar">AR</h2>
-<p>来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app<a href="http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba">随便走</a>，基于AR+LBS的导航，也是挺有意思的。还有宜家的app<a href="http://www.ikea.com/ms/zh_CN/campaigns/catalogue_2016/index.html">家居指南</a>，可以把虚拟家具直接放在家里看效果，cool~</p>
+<hr />
 
-<p><img src="/res/pokemango2.jpg" width="220" height="380" /></p>
+<h2 id="step-1">step 1</h2>
 
-<p>与其期待pokeman go在国服能愉快的玩耍，还不如期待国内跟风开发出来的带本土特色的类似游戏呢，毕竟技术上也不是难点。</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>var inputFocused = false;
+$('input').focus(function() {
+    setTimeout(function() {
+        inputFocused = true;
+    },100);
+});
+</code></pre>
+</div>
 
-<p>所以在我看来，对于中国市场来说，种菜偷菜才是用户需求痛点！在地图上，有着各种各样的蔬菜，为了获得菜，玩家们乐此不疲的走出家门，奔赴一个又一个的菜点。对于标志性建筑还可以设置为菜园子，贡献度高的玩家可以成为至高无上的地主！2.0版本还支持斗地主！玩法极多，相信一定可以在国内击败pokeman go。好了，现在就差钱开工了，有老板想投资的吗？</p>
+<h2 id="step-2">step 2</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$(window).click(function() {
+    if(inputFocused == true) {
+        $(window).focus();
+        $('input').blur();
+        inputFocused = false;
+    }
+});
+</code></pre>
+</div>
+
+<hr />
+<p>至于为什么要加setTimeOut方法是因为 $(window).click()事件包括了屏幕上所有的点击，所以要让inputFocused为true有一些延迟咯 :)</p>
 </div>
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
     <!-- <info class="after">
-<div class="fb-like" data-href="//rsms.me/pokemango" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+<div class="fb-like" data-href="//rsms.me/iosIframeProblem" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
     </info> -->
 
   
@@ -106,7 +122,7 @@
     <br>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-      window.disqus_identifier = "/pokemango";
+      window.disqus_identifier = "/iosIframeProblem";
     </script>
     <script async src="//hunch.disqus.com/embed.js"></script>
     <noscript>Please enable JavaScript to view the
@@ -115,7 +131,7 @@
     <script>
 // Disqus
 var disqus_shortname = 'ouyanghan';
-if (!window.disqus_url) window.disqus_url = "http://ouyanghan.com/pokemango";
+if (!window.disqus_url) window.disqus_url = "http://ouyanghan.com/iosIframeProblem";
 if (!window.disqus_title) window.disqus_title = document.title;
 (function(){try{
 // this hack takes care of formatting # comments
