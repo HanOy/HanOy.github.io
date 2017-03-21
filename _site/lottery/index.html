@@ -1,46 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-	<title>抽奖</title>
-	<link href="./css/style.css" type="text/css" rel="stylesheet" media="screen, projection">
-	<link href="./css/style1.css" type="text/css" rel="stylesheet" media="screen, projection">
-	<link href="./css/ui-dialog.css" type="text/css" rel="stylesheet" media="screen, projection">
+<meta charset="utf-8">
+<title>抽奖</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
 </head>
-
-<body scroll="no">
-<div class="readme hide">
-<p>▪ 按键盘空格键或者字母A可进行抽取,隐藏菜单请按ESC。</p>
-<p>▪ ESC菜单中高级设置可以设置参与人数，格子大小，重置抽奖数据等信息。</p>
-<p>▪ 点击已经中奖格子并输入点击的格子编号可取消该格子中奖状态，并清除中奖信息。</p>
-<p>▪ 中奖信息保存在本机上，如清理缓存活更换机器则记录将消失。</p>
-<p>▪ 请使用Chrome浏览器浏览，在投影仪上展示，请进入浏览器的全屏模式浏览。</p>
-</div>
-<div id="bodybg">
-</div>
-<div class="model hide">
-    <p><b>人数：</b><input type="text" id="personCount" class="ui-dialog-autofocus" value="" placeholder="输入人数，请输入数字。"/></p>
-    <p class="line"><label><input type="checkbox" id="reset" value="1"/>重置已产生的抽奖数据</label></p>
-</div>
-<div class="top">抽奖</div>
-<div class="items"></div>
-<div class="menu">
-	<div class="help">
-		按键盘空格键进行抽取,查看帮助请按F1,隐藏请按ESC。
-        <a href="javascript:;" class="config">高级设定</a>
-	</div>
-    <div class="ss">
-        <h2>中奖结果：</h2>
-        <ol></ol>
+<body>
+<div class="main_bg">
+    <div class="main">
+        <div id="num_show" class="result"><a href="">清除数据</a> 中奖号码：</div>
+        <div class="num_mask"></div>
+        <div class="num_box">
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="num"></div>
+            <div class="btn"></div>
+        </div>
     </div>
 </div>
 
-
-<audio id="runingmic" class="hide" loop><source src=".\music\runing.wav"></audio>
-<audio id="pausemic" class="hide"><source src=".\music\stop.mp3"></audio>
-<script type="text/javascript" src="./js/jquery.js"></script>
-<script type="text/javascript" src="./js/jquery.pulsate.min.js"></script>
-<script type="text/javascript" src="./js/dialog-plus-min.js"></script>
-<script type="text/javascript" src="./js/app.js"></script>
-
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="js/animateBackground-plugin.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
