@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2017-06-20T20:28:22+08:00</updated>
+  <updated>2017-06-21T12:10:02+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -19,8 +19,8 @@
 
 &lt;p&gt;点击搜索后强行将input焦点移出来也并不管用：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$('searchBtn').click(function() {
-	$('input').blur();	
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(&#39;searchBtn&#39;).click(function() {
+	$(&#39;input&#39;).blur();	
 })
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -32,7 +32,7 @@
 &lt;h2 id=&quot;step-1&quot;&gt;step 1&lt;/h2&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var inputFocused = false;
-$('input').focus(function() {
+$(&#39;input&#39;).focus(function() {
     setTimeout(function() {
         inputFocused = true;
     },100);
@@ -45,7 +45,7 @@ $('input').focus(function() {
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(window).click(function() {
     if(inputFocused == true) {
         $(window).focus();
-        $('input').blur();
+        $(&#39;input&#39;).blur();
         inputFocused = false;
     }
 });
@@ -120,12 +120,12 @@ https://www.chehejia.com/&lt;/p&gt;
     	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
       &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'earth_div'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;earth_div&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
         	&lt;span class=&quot;na&quot;&gt;atmosphere&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
         	&lt;span class=&quot;na&quot;&gt;sky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tileLayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;attribution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'© OpenStreetMap contributors'&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tileLayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;attribution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;© OpenStreetMap contributors&#39;&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 		&lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;31.198248&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;121.448596&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -156,7 +156,7 @@ https://www.chehejia.com/&lt;/p&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;欧阳晗-WebGL Earth API: Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onload=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;initialize()&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'wx_logo'&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'margin:0 auto;display:none;'&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;wx_logo&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;margin:0 auto;display:none;&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;../favicon.jpg&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;earth_div&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
@@ -307,7 +307,7 @@ https://www.chehejia.com/&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/getlantern/lantern&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;下载地址&quot;&gt;下载地址&lt;/h2&gt;
+&lt;h2 id=&quot;section&quot;&gt;下载地址&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.apk&quot;&gt;Android&lt;/a&gt;&lt;/p&gt;
 
@@ -346,7 +346,7 @@ https://www.chehejia.com/&lt;/p&gt;
 
 &lt;p&gt;来看一下&lt;a href=&quot;https://github.com/plutext/docx4j/tree/master/src/samples/docx4j/org/docx4j/samples&quot;&gt;官方github的demo&lt;/a&gt;:&lt;/p&gt;
 
-&lt;h2 id=&quot;新建一个docx文件createwordprocessingmldocumentjava&quot;&gt;新建一个.docx文件，CreateWordprocessingMLDocument.java&lt;/h2&gt;
+&lt;h2 id=&quot;docxcreatewordprocessingmldocumentjava&quot;&gt;新建一个.docx文件，CreateWordprocessingMLDocument.java&lt;/h2&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public static void main(String[] args) throws Exception {
 	WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.createPackage();
 	MainDocumentPart mdp = wordMLPackage.getMainDocumentPart();
@@ -362,7 +362,7 @@ https://www.chehejia.com/&lt;/p&gt;
     
 	mdp.addObject(org.docx4j.XmlUtils.unmarshalString(str));
     
-	// Example 5: Let's add a table
+	// Example 5: Let&#39;s add a table
 	int writableWidthTwips = wordMLPackage.getDocumentModel().getSections().get(0).getPageDimensions().getWritableWidthTwips();
 	int cols = 3;
 	int cellWidthTwips = new Double(Math.floor((writableWidthTwips/cols))).intValue();
@@ -439,31 +439,31 @@ Docx4J.toPDF(wordMLPackage, os);
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO student (name, age, class)
 VALUES
-	('张三', '3', '三班'),
-	('李四', '4', '四班'),
-	('王五', '5', '五班');
+	(&#39;张三&#39;, &#39;3&#39;, &#39;三班&#39;),
+	(&#39;李四&#39;, &#39;4&#39;, &#39;四班&#39;),
+	(&#39;王五&#39;, &#39;5&#39;, &#39;五班&#39;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;当我们要把张三换到二班：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = '二班' 
-where name = '张三';
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; 
+where name = &#39;张三&#39;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;当我们要把张三、李四、王五都换到二班去，前提是不能删除后新增，毕竟删除有风险，断个电啥的：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = '二班' 
-where name in ('张三','李四','王五');
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;二班&#39; 
+where name in (&#39;张三&#39;,&#39;李四&#39;,&#39;王五&#39;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;上面这条语句只适用于所有同学都换到二班的情况，现在他们都在二班了，把他们还原到原来班级的话，就不适用了，只能这样先：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = '三班' where name = '张三';
-...                        '四班'  ...         '李四';
-...                        '五班'  ...         '王五';
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update student set class = &#39;三班&#39; where name = &#39;张三&#39;;
+...                        &#39;四班&#39;  ...         &#39;李四&#39;;
+...                        &#39;五班&#39;  ...         &#39;王五&#39;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -475,9 +475,9 @@ where name in ('张三','李四','王五');
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;UPDATE student SET class = 
 CASE
-	WHEN NAME = '张三' THEN '三班'
-	WHEN NAME = '李四' THEN '四班'
-	WHEN NAME = '王五' THEN '五班' 
+	WHEN NAME = &#39;张三&#39; THEN &#39;三班&#39;
+	WHEN NAME = &#39;李四&#39; THEN &#39;四班&#39;
+	WHEN NAME = &#39;王五&#39; THEN &#39;五班&#39; 
 END;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -492,9 +492,9 @@ END;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;REPLACE INTO student (name,class) 
 values 
-	('张三','三班'),
-	('李四','四班'),
-	('王五','五班');
+	(&#39;张三&#39;,&#39;三班&#39;),
+	(&#39;李四&#39;,&#39;四班&#39;),
+	(&#39;王五&#39;,&#39;五班&#39;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -506,9 +506,9 @@ values
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;REPLACE INTO student (name,age,class) 
 values 
-	('张三','3','三班'),
-	('李四','4','四班'),
-	('王五','5','五班');
+	(&#39;张三&#39;,&#39;3&#39;,&#39;三班&#39;),
+	(&#39;李四&#39;,&#39;4&#39;,&#39;四班&#39;),
+	(&#39;王五&#39;,&#39;5&#39;,&#39;五班&#39;);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -520,9 +520,9 @@ values
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO student (NAME, class)
 VALUES
-	('张三', '三班'),
-	('李四', '四班'),
-	('王五', '五班') 
+	(&#39;张三&#39;, &#39;三班&#39;),
+	(&#39;李四&#39;, &#39;四班&#39;),
+	(&#39;王五&#39;, &#39;五班&#39;) 
 ON DUPLICATE KEY UPDATE class = VALUES(class);
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -531,9 +531,9 @@ ON DUPLICATE KEY UPDATE class = VALUES(class);
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO student (NAME, age, class)
 VALUES
-	('张三', 1, '三班'),
-	('李四', 1, '四班'),
-	('王五', 1, '五班') 
+	(&#39;张三&#39;, 1, &#39;三班&#39;),
+	(&#39;李四&#39;, 1, &#39;四班&#39;),
+	(&#39;王五&#39;, 1, &#39;五班&#39;) 
 ON DUPLICATE KEY UPDATE 
 	class = VALUES(class),
 	age = VALUES(age);

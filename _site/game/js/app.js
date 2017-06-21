@@ -1,13 +1,19 @@
 $(function(){
 	$('.start').on('click', function(){
-		var index = getRandom(0, 14);
-		var $td = $('table').find('td').eq(index);
-		$('.alert div').text($td.text());
-		$('.alert div').css('color', $td.css("color"));
+		// var index = getRandom(0, 14);
+		// var $td = $('table').find('td').eq(index);
+		// $('.alert div').text($td.text());
+		// $('.alert div').css('color', $td.css("color"));
 		$('.alert').show();
-		var count = 10;
+		var time = $('input[name="time"]').val();
+		var second = $('input[name="second"]').val();
+		if (!time || !second) {
+			alert("输入数字");
+			return;
+		}
+		var count = parseInt(time/second);
 		var remain = setInterval(function() {
-            if (count > 1) {
+            if (count >= 0) {
                 count--;
                 var index = getRandom(0, 14);
 				var $td = $('table').find('td').eq(index);
@@ -15,8 +21,9 @@ $(function(){
 				$('.alert div').css('color', $td.css("color"));
             } else {
                 clearInterval(remain);
+        		$('.alert div').text("完");
             }
-        }, 1500)
+        }, second*1000)
 	})
 
 	$('.alert').on('click', function(){
