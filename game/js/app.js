@@ -1,9 +1,5 @@
 $(function(){
 	$('.start').on('click', function(){
-		// var index = getRandom(0, 14);
-		// var $td = $('table').find('td').eq(index);
-		// $('.alert div').text($td.text());
-		// $('.alert div').css('color', $td.css("color"));
 		$('.alert').show();
 		var time = $('input[name="time"]').val();
 		var second = $('input[name="second"]').val();
@@ -12,10 +8,15 @@ $(function(){
 			return;
 		}
 		var count = parseInt(time/second);
+		var preIndex = 666;
 		var remain = setInterval(function() {
             if (count >= 0) {
                 count--;
                 var index = getRandom(0, 14);
+                while (index == preIndex) {
+                	index = getRandom(0, 14); 
+                }
+                preIndex = index;
 				var $td = $('table').find('td').eq(index);
 				$('.alert div').text($td.text());
 				$('.alert div').css('color', $td.css("color"));
