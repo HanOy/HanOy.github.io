@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2017-08-03T16:02:06+08:00</updated>
+  <updated>2017-08-03T16:36:49+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -62,29 +62,39 @@ $(&#39;input&#39;).focus(function() {
   </entry>
   
   <entry>
-    <title>瞧一瞧看一看，国内的互联网车车</title>
+    <title>期待电动车成为主流的那一天</title>
     <link href="http://ouyanghan.com/car"/>
     <updated>2016-09-06T00:00:00+08:00</updated>
     <id>http://ouyanghan.com/car</id>
     <content type="html">&lt;hr /&gt;
-&lt;p&gt;LeSEE乐视超级汽车
-&lt;a href=&quot;http://lesee.leeco.com/&quot;&gt;http://lesee.leeco.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;LeSEE乐视超级汽车&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://lesee.leeco.com/&quot;&gt;http://lesee.leeco.com/&lt;/a&gt;
+&lt;img src=&quot;http://i0.letvimg.com/lc06_img/201610/09/17/09/images/Slideshow2/Ext_2_1320.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;蔚来汽车
-&lt;a href=&quot;http://www.nio.com/&quot;&gt;http://www.nio.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;蔚来汽车&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.nio.com/&quot;&gt;http://www.nio.com/&lt;/a&gt;
+&lt;img src=&quot;http://www.nio.com/prod/s3fs-public/styles/scale_width_1920_desktop_1x_/public/2017-04/935_AT_NextEV_Teaser_Front34_v11a_R_1.jpg?GgCHOGCl73vGKOoaQyI0IXJY4ekN47Dx&amp;amp;itok=8uNv0ne7&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;小鹏汽车
-&lt;a href=&quot;https://www.xiaopeng.com/#page1&quot;&gt;https://www.xiaopeng.com/#page1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小鹏汽车&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.xiaopeng.com/#page1&quot;&gt;https://www.xiaopeng.com/&lt;/a&gt;
+&lt;img src=&quot;http://img.mp.itc.cn/upload/20170101/6226e2fdce7949c39f19cb17afff9cb2_th.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;奇点汽车
-&lt;a href=&quot;https://www.xiaopeng.com/#page1&quot;&gt;http://www.zhicheauto.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;奇点汽车&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.zhicheauto.com/&quot;&gt;http://www.zhicheauto.com/&lt;/a&gt;
+&lt;img src=&quot;https://www.singulato.com/wp-content/themes/singulato/img/car_1.png&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;车和家
-&lt;a href=&quot;https://www.chehejia.com/&quot;&gt;https://www.chehejia.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;车和家&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.chehejia.com/&quot;&gt;https://www.chehejia.com/&lt;/a&gt;
+&lt;img src=&quot;https://s.chehejia.com/www/img/index/indexcar-big.png&quot; /&gt;&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
