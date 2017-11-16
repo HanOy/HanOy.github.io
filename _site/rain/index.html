@@ -8,7 +8,11 @@
 <body>
 	<div class="container">
 		<div class="col-md-9 col-md-offset-3">
-			<audio id="bgmusic" src="1.mp3" autoplay preload loop controls></audio>
+			<audio id="bgmusic" autoplay preload loop controls>   
+		      	<source src="mp3/1.mp3" type="audio/mpeg">
+		      	Your browser does not support the audio tag.
+		    </audio>
+			<!-- <audio id="bgmusic" src="mp3/1.mp3" type="audio/mpeg" autoplay preload loop controls></audio> -->
 		</div>
 	</div>
 	
@@ -26,7 +30,19 @@
             jsApiList: []
         });
         wx.ready(function() {
-            document.getElementById('bgmusic').play();
+        	var myaudio = document.getElementById('bgmusic');
+        	var isPlaying = myaudio.currentTime > 0 && !myaudio.paused && !myaudio.ended && myaudio.readyState > 2;
+			if (!isPlaying) {
+				setTimeout(function () {
+					myaudio.play().catch(function (e) {
+						console.log("", e.message);
+						console.log("", e.description);
+					});
+				}, 150);
+			} else {
+				alert("网络缓慢，正在加载音频...");
+			}
+            // document.getElementById('bgmusic').play();
         });
     }
     
