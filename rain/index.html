@@ -7,32 +7,9 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-9 col-md-offset-3">
-				<audio id="bgmusic" src="https://raw.githubusercontent.com/HanOy/HanOy.github.io/master/rain/mp3/1.mp3" autoplay preload loop controls></audio>
-			</div>
-		</div>
+		<a href="mp3/1.mp3">下雨&董卓瑶&忽然(2014i／O版)</a>
 	</div>
 	
-	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-	<script>
-    // 通过config接口注入权限验证配置后, 在 ready 中 play 一下 audio
-    function autoPlayAudio() {
-        wx.config({
-            // 配置信息, 即使不正确也能使用 wx.ready
-            debug: false,
-            appId: '',
-            timestamp: 1,
-            nonceStr: '',
-            signature: '',
-            jsApiList: []
-        });
-        wx.ready(function() {
-            document.getElementById('bgmusic').play();
-        });
-    }
-    
-    autoPlayAudio(); 
-    </script>
+	<script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
 </body>
 </html>
