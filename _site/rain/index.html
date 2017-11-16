@@ -16,37 +16,44 @@
 		</div>
 	</div>
 	
-	<!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script>
     // 通过config接口注入权限验证配置后, 在 ready 中 play 一下 audio
     function autoPlayAudio() {
-        wx.config({
-            // 配置信息, 即使不正确也能使用 wx.ready
-            debug: false,
-            appId: '',
-            timestamp: 1,
-            nonceStr: '',
-            signature: '',
-            jsApiList: []
-        });
-        wx.ready(function() {
-        	var myaudio = document.getElementById('bgmusic');
-        	var isPlaying = myaudio.currentTime > 0 && !myaudio.paused && !myaudio.ended && myaudio.readyState > 2;
-			if (!isPlaying) {
-				setTimeout(function () {
-					myaudio.play().catch(function (e) {
-						console.log("", e.message);
-						console.log("", e.description);
-					});
-				}, 150);
-			} else {
-				alert("网络缓慢，正在加载音频...");
-			}
-            // document.getElementById('bgmusic').play();
-        });
+    	if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+		    WeixinJSBridge.invoke('getNetworkType', {}, function (res) {
+		        // 在这里拿到 e.err_msg, 这里面就包含了所有的网络类型
+		        // alert(res.err_msg);
+		        document.getElementById('bgmusic').play();
+		    });
+		}
+   //      wx.config({
+   //          // 配置信息, 即使不正确也能使用 wx.ready
+   //          debug: false,
+   //          appId: '',
+   //          timestamp: 1,
+   //          nonceStr: '',
+   //          signature: '',
+   //          jsApiList: []
+   //      });
+   //      wx.ready(function() {
+   //      	var myaudio = document.getElementById('bgmusic');
+   //      	var isPlaying = myaudio.currentTime > 0 && !myaudio.paused && !myaudio.ended && myaudio.readyState > 2;
+			// if (!isPlaying) {
+			// 	setTimeout(function () {
+			// 		myaudio.play().catch(function (e) {
+			// 			console.log("", e.message);
+			// 			console.log("", e.description);
+			// 		});
+			// 	}, 150);
+			// } else {
+			// 	alert("网络缓慢，正在加载音频...");
+			// }
+   //          // document.getElementById('bgmusic').play();
+   //      });
     }
     
     autoPlayAudio(); 
-    </script> -->
+    </script>
 </body>
 </html>
