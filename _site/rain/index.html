@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-	<h2>你好，查水表</h2>
+	<h2 id="title">你好，查水表</h2>
 	<div class="tweet">
 		<p><a href="mp3/1.mp3">下雨&董卓瑶&忽然(2014i／O版)</a></p>
 		<p><a href="mp3/2.mp3">下雨</a></p>
@@ -49,4 +49,9 @@
 	</div>
 </body>
 <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+<script type="text/javascript">
+	document.getElementById("title").addEventListener("click", function(){
+		window.location.href = "http://ouyanghan.com";
+	}); 
+</script>
 </html>
