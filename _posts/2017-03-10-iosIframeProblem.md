@@ -3,7 +3,7 @@ layout: post
 title: 记一个兼容性问题
 date: 2017-03-10
 tags: Chinese
-category: problem
+category: 问题解决
 is_share: true
 disqus_comments: true
 description: iframe中焦点移出输入框iphone键盘却没有隐藏
