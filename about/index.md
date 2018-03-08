@@ -13,6 +13,6 @@ hi，我是欧阳晗，一枚普通的扎瓦程序猿，我的愿望是拯救世
 
 - [Weibo](http://weibo.com/ohohy) — 新浪微博 <wb:follow-button uid="2187786674" type="gray_3" width="100%" height="24" ></wb:follow-button>
 - [GitHub](https://github.com/HanOy) — code, 不好意思见人的 code
-- <a class="link-1" href="mailto:oyh3745@gmail.com?Subject=Hi">Email</a> — a good way to make contact
+<!-- - <a class="link-1" href="mailto:oyh3745@gmail.com?Subject=Hi">Email</a> — a good way to make contact -->
 - [Wechat]() — qrcode: <img src="/res/wechat.jpg" width="100" height="100" style="display:inline-block;vertical-align:middle">
 - 炉石、OW菜鸡玩家，昵称都是hoy
