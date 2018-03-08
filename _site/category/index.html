@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: http://ogp.me/ns#" xmlns:wb="http://open.weibo.com/wb">
   <head>
     <meta charset="utf-8">
-    <title>category &mdash; 欧阳晗</title>
+    <title>Category &mdash; 欧阳晗</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="wb:webmaster" content="c386270be418f8d5" />
     
@@ -22,9 +22,10 @@
     <meta name="p:domain_verify" content="b3fb3041235fca06534c26184a7588bf"/>
     
     
-    <meta property="og:title" content="category">
+    <meta property="og:title" content="Category">
       
-      <meta name="description" content="Category
+      <meta name="description" content="
+  Category
 
     
     
@@ -39,8 +40,15 @@
     	问题解决 (2)
     
     
+
+
+
+
+
+
 ">
-      <meta name="og:description" content="Category
+      <meta name="og:description" content="
+  Category
 
     
     
@@ -55,6 +63,12 @@
     	问题解决 (2)
     
     
+
+
+
+
+
+
 ">
       
     
@@ -81,7 +95,8 @@
       </ul>
     </header>
     <!--div class="wrapper content"-->
-      <h1>Category</h1>
+      <div class="content">
+  <h1>Category</h1>
 <ul class="categories">
     
     <li>
@@ -100,6 +115,49 @@ posts">问题解决 (2)</a>
     </li>
     
 </ul>
+</div>
+
+<!-- During authoring, this automatically reloads the post as its changing -->
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+
+
     <!--/div-->
     
     
