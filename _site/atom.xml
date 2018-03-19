@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-03-19T14:08:55+08:00</updated>
+  <updated>2018-03-19T14:21:31+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -28,7 +28,62 @@
     <link href="http://ouyanghan.com/rain"/>
     <updated>2018-03-19T00:00:00+08:00</updated>
     <id>http://ouyanghan.com/rain</id>
-    <content type="html">
+    <content type="html">&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;下起了雨，你感到冷吗？&lt;/title&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot; /&gt;
+	&lt;style type=&quot;text/css&quot;&gt;
+        div.tweet p {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-color: #fbfbfb;
+            border-color: #aaa #aaa #aaa #f28500;
+            border-image: none;
+            border-style: solid;
+            border-width: 1px 1px 1px 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 2px 0.5em;
+            margin: 3% 8%;
+        }
+        div.tweet i {
+            border: 1px solid #aaa;
+            color: brown;
+            font-size: 14px;
+            font-style: normal;
+            margin-right: 0.5em;
+            padding: 0 2px;
+        }
+        H2 {
+            border-bottom: 2px solid LightGrey;
+            color: #666666;
+            font-family: &quot;Palatino Linotype&quot;,&quot;Book Antiqua&quot;,Palatino,Helvetica,STKaiti,SimSun,serif;
+            line-height: 150%;
+            margin-bottom: 40px;
+            padding: 5px;
+            width: 98%;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h2 id=&quot;title&quot;&gt;你好，查水表&lt;/h2&gt;
+	&lt;div class=&quot;tweet&quot;&gt;
+		&lt;p&gt;&lt;a href=&quot;mp3/1.mp3&quot;&gt;下雨&amp;amp;董卓瑶&amp;amp;忽然(2014i／O版)&lt;/a&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&quot;mp3/2.mp3&quot;&gt;下雨&lt;/a&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&quot;mp3/3.mp3&quot;&gt;下雨2013版[Live]&lt;/a&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&quot;mp3/4.mp3&quot;&gt;下雨 2015现场版&lt;/a&gt;&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://mediaplayer.yahoo.com/js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	document.getElementById(&quot;title&quot;).addEventListener(&quot;click&quot;, function(){
+		window.location.href = &quot;http://ouyanghan.com&quot;;
+	}); 
+&lt;/script&gt;
+&lt;/html&gt;
 </content>
     <author>
       <name>ouyanghan</name>
