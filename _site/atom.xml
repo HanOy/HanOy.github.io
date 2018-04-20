@@ -3,12 +3,31 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-03-19T14:25:07+08:00</updated>
+  <updated>2018-04-20T17:33:22+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
     <email>oyh3745@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>推荐一款练听力的app</title>
+    <link href="http://ouyanghan.com/eartrainer"/>
+    <updated>2018-04-20T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/eartrainer</id>
+    <content type="html">&lt;p&gt;叫：Functional Ear Trainer&lt;/p&gt;
+
+&lt;p&gt;适用人群：朵瑞咪发嗦听不明白的同学&lt;/p&gt;
+
+&lt;p&gt;刚开始玩，C大调Basic练习，20题只能对几个，第二把就能对50%！我觉得挺好的，每天玩一玩，说不定以后我也能成为用听力调弦的老司机~&lt;/p&gt;
+
+&lt;p&gt;反正google应用商店有，ios自己搜下看吧。&lt;/p&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>李志-这个世界会好吗</title>
@@ -466,27 +485,6 @@ $(&#39;input&#39;).focus(function() {
 &lt;p&gt;与其期待pokeman go在国服能愉快的玩耍，还不如期待国内跟风开发出来的带本土特色的类似游戏呢，毕竟技术上也不是难点。&lt;/p&gt;
 
 &lt;p&gt;所以在我看来，对于中国市场来说，种菜偷菜才是用户需求痛点！在地图上，有着各种各样的蔬菜，为了获得菜，玩家们乐此不疲的走出家门，奔赴一个又一个的菜点。对于标志性建筑还可以设置为菜园子，贡献度高的玩家可以成为至高无上的地主！2.0版本还支持斗地主！玩法极多，相信一定可以在国内击败pokeman go。好了，现在就差钱开工了，有老板想投资的吗？&lt;/p&gt;
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>冲动是可以用写代码来抑制的吧</title>
-    <link href="http://ouyanghan.com/mood"/>
-    <updated>2016-06-13T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/mood</id>
-    <content type="html">&lt;p&gt;心血来潮想写点啥&lt;/p&gt;
-
-&lt;p&gt;写着写着&lt;/p&gt;
-
-&lt;p&gt;又来bug了&lt;/p&gt;
-
-&lt;p&gt;bug解决完了&lt;/p&gt;
-
-&lt;p&gt;潮已经退了&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
