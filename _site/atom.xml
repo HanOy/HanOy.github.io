@@ -3,12 +3,156 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-06-06T19:18:05+08:00</updated>
+  <updated>2018-06-12T16:38:45+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
     <email>oyh3745@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>java面试题</title>
+    <link href="http://ouyanghan.com/interview"/>
+    <updated>2018-06-12T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/interview</id>
+    <content type="html">&lt;h2 id=&quot;section&quot;&gt;大纲来源&lt;/h2&gt;
+
+&lt;p&gt;作者：占小狼
+链接：https://www.jianshu.com/p/a07d1d4004b0
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。&lt;/p&gt;
+
+&lt;h2 id=&quot;java-&quot;&gt;JAVA 基础&lt;/h2&gt;
+
+&lt;p&gt;1、List 和 Set 的区别
+&lt;a href=&quot;https://www.cnblogs.com/IvesHe/p/6108933.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2、HashSet 是如何保证不重复的
+&lt;a href=&quot;https://blog.csdn.net/u010698072/article/details/52802179&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3、HashMap 是线程安全的吗，为什么不是线程安全的（最好画图说明多线程环境下不安全）?
+&lt;a href=&quot;https://www.cnblogs.com/qiumingcheng/p/5259892.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;4、HashMap 的扩容过程
+&lt;a href=&quot;https://blog.csdn.net/aichuanwendang/article/details/53317351&quot;&gt;答案&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/KingIceMou/p/6976574.html&quot;&gt;答案2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;5、HashMap 1.7 与 1.8 的 区别，说明 1.8 做了哪些优化，如何优化的？
+&lt;a href=&quot;http://www.cnblogs.com/stevenczp/p/7028071.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;6、final finally finalize
+&lt;a href=&quot;https://blog.csdn.net/beixiaozhang/article/details/52955862&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;7、强引用 、软引用、 弱引用、虚引用
+&lt;a href=&quot;https://www.zhihu.com/question/37401125&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;8、Java反射
+&lt;a href=&quot;http://www.cnblogs.com/jqyp/archive/2012/03/29/2423112.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;9、Arrays.sort 实现原理和 Collection 实现原理
+&lt;a href=&quot;https://blog.csdn.net/u011410529/article/details/56668545&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;10、LinkedHashMap的应用
+&lt;a href=&quot;https://blog.csdn.net/kiss_the_sun/article/details/7848920&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;11、cloneable接口实现原理
+&lt;a href=&quot;https://www.zhihu.com/question/52490586&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;12、异常分类以及处理机制
+&lt;a href=&quot;https://blog.csdn.net/sinat_36713319/article/details/68945619&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;13、wait和sleep的区别
+&lt;a href=&quot;https://blog.csdn.net/xyh269/article/details/52613507&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;14、数组在内存中如何分配
+&lt;a href=&quot;https://www.cnblogs.com/chenpi/p/5489732.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;java&quot;&gt;JAVA并发&lt;/h2&gt;
+
+&lt;p&gt;1、synchronized 的实现原理以及锁优化？
+2、volatile 的实现原理？
+3、Java 的信号灯？
+4、synchronized 在静态方法和普通方法的区别？
+5、怎么实现所有线程在等待某个事件的发生才会去执行？
+6、CAS？CAS 有什么缺陷，如何解决？
+7、synchronized 和 lock 有什么区别？
+8、Hashtable 是怎么加锁的 ？
+9、HashMap 的并发问题？
+10、ConcurrenHashMap 介绍？1.8 中为什么要用红黑树？
+11、AQS
+12、如何检测死锁？怎么预防死锁？
+13、Java 内存模型？
+14、如何保证多线程下 i++ 结果正确？
+15、线程池的种类，区别和使用场景？
+16、分析线程池的实现原理和线程的调度过程？
+17、线程池如何调优，最大数目如何确认？
+18、ThreadLocal原理，用的时候需要注意什么？
+19、CountDownLatch 和 CyclicBarrier 的用法，以及相互之间的差别?
+20、LockSupport工具
+21、Condition接口及其实现原理
+22、Fork/Join框架的理解
+23、分段锁的原理,锁力度减小的思考
+24、八种阻塞队列以及各个阻塞队列的特性&lt;/p&gt;
+
+&lt;h2 id=&quot;spring&quot;&gt;Spring&lt;/h2&gt;
+
+&lt;p&gt;1、BeanFactory 和 FactoryBean？
+2、Spring IOC 的理解，其初始化过程？
+3、BeanFactory 和 ApplicationContext？
+4、Spring Bean 的生命周期，如何被管理的？
+5、Spring Bean 的加载过程是怎样的？
+6、如果要你实现Spring AOP，请问怎么实现？
+7、如果要你实现Spring IOC，你会注意哪些问题？
+8、Spring 是如何管理事务的，事务管理机制？
+9、Spring 的不同事务传播行为有哪些，干什么用的？
+10、Spring 中用到了那些设计模式？
+11、Spring MVC 的工作原理？
+12、Spring 循环注入的原理？
+13、Spring AOP的理解，各个术语，他们是怎么相互工作的？
+14、Spring 如何保证 Controller 并发的安全？&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;数据库&lt;/h2&gt;
+
+&lt;p&gt;1、mysql分页有什么优化
+2、悲观锁、乐观锁
+3、组合索引，最左原则
+4、mysql 的表锁、行锁
+5、mysql 性能优化
+6、mysql的索引分类：B+，hash；什么情况用什么索引
+7、事务的特性和隔离级别&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;缓存&lt;/h2&gt;
+
+&lt;p&gt;1、Redis用过哪些数据数据，以及Redis底层怎么实现
+2、Redis缓存穿透，缓存雪崩
+3、如何使用Redis来实现分布式锁
+4、Redis的并发竞争问题如何解决
+5、Redis持久化的几种方式，优缺点是什么，怎么实现的
+6、Redis的缓存失效策略
+7、Redis集群，高可用，原理
+8、Redis缓存分片
+9、Redis的数据淘汰策略&lt;/p&gt;
+
+&lt;h2 id=&quot;jvm&quot;&gt;JVM&lt;/h2&gt;
+
+&lt;p&gt;1、详细jvm内存模型
+2、讲讲什么情况下回出现内存溢出，内存泄漏？
+3、说说Java线程栈
+4、JVM 年轻代到年老代的晋升过程的判断条件是什么呢？
+5、JVM 出现 fullGC 很频繁，怎么去线上排查问题？
+6、类加载为什么要使用双亲委派模式，有没有什么场景是打破了这个模式？
+7、类的实例化顺序
+8、JVM垃圾回收机制，何时触发MinorGC等操作
+9、JVM 中一次完整的 GC 流程（从 ygc 到 fgc）是怎样的
+10、各种回收器，各自优缺点，重点CMS、G1
+11、各种回收算法
+12、OOM错误，stackoverflow错误，permgen space错误&lt;/p&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>推荐一款练听力的app</title>
@@ -450,41 +594,6 @@ $(&#39;input&#39;).focus(function() {
 &lt;p&gt;我还想到美剧《硅谷》里关于做平台还是做盒子的冲突。只关心公司市值的CEO想做一个基于男主技术的盒子，这样可以迅速产生利润拿到下一轮的钱。但想让自己的技术show给更多人的男主们却想做一个平台，希望更多的普通人喜欢他们的技术。虽然故事最后他们确实做了平台，那位CEO也下课了，但还是有种种原因公司拿不到下一轮融资破产而被收购。可能这就是现实与理想的差距吧，好了吐槽完了，得赶紧改bug去了。&lt;/p&gt;
 
 &lt;p&gt;对了，收购的人是男主的好朋友，所以在下一季估计他们就能改变世界了~&lt;/p&gt;
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>聊聊pokeman go</title>
-    <link href="http://ouyanghan.com/pokemango"/>
-    <updated>2016-07-13T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/pokemango</id>
-    <content type="html">&lt;p&gt;任天堂、精灵宝可梦、Niantic合作推出的Pokemon Go《口袋妖怪Go》最近火的一塌糊涂。&lt;/p&gt;
-
-&lt;p&gt;虽然那个锁区的长方形框住了上海，抓不了小精灵，我还是把它给下下来感受了一把，毕竟还有新手教程可以抓一只妙蛙种子呢:P&lt;/p&gt;
-
-&lt;p&gt;打开游戏，开启定位功能之后，游戏会在摄像头实时拍摄的画面中叠加小精灵，这些精灵可能会藏在任何角落，你需要拿着手机四处走动，发现它并且抓住它。不得不说打开了游戏方式新的大门。基于的技术呢主要就是AR（增强现实，简单说就是虚拟的小精灵套在现实世界）和LBS（基于位置服务，简单说就是定位）。&lt;/p&gt;
-
-&lt;h2 id=&quot;lbs&quot;&gt;LBS&lt;/h2&gt;
-&lt;p&gt;先来看看LBS，国内最完备的无非就是百度地图和高德地图咯，但是pokeman go却是基于google地图的。2010年谷歌退出中国了，地图不准是应该的，但游戏地图里的数据居然会这么不准确！！当你真的去玩了就知道游戏里的地图是多么不准确了。给大家看看我截下来的图。。这可是上海徐家汇附近，不是什么犄角旮旯的地方。&lt;/p&gt;
-&lt;div&gt;
-	&lt;img src=&quot;/res/pokemango.jpg&quot; width=&quot;210&quot; height=&quot;360&quot; style=&quot;display:inline-block;vertical-align:right&quot; /&gt;
-	&lt;img src=&quot;/res/pokeman3.jpg&quot; width=&quot;280&quot; height=&quot;360&quot; style=&quot;display:inline-block;vertical-align:left&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;当你走到游戏地图的湖边想抓一只水系的小精灵，但是发现这里早已是一幢高楼，这个游戏体验得摔手机了。&lt;/p&gt;
-
-&lt;h2 id=&quot;ar&quot;&gt;AR&lt;/h2&gt;
-&lt;p&gt;来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app&lt;a href=&quot;http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba&quot;&gt;随便走&lt;/a&gt;，基于AR+LBS的导航，也是挺有意思的。还有宜家的app&lt;a href=&quot;http://www.ikea.com/ms/zh_CN/campaigns/catalogue_2016/index.html&quot;&gt;家居指南&lt;/a&gt;，可以把虚拟家具直接放在家里看效果，cool~&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/res/pokemango2.jpg&quot; width=&quot;220&quot; height=&quot;380&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;与其期待pokeman go在国服能愉快的玩耍，还不如期待国内跟风开发出来的带本土特色的类似游戏呢，毕竟技术上也不是难点。&lt;/p&gt;
-
-&lt;p&gt;所以在我看来，对于中国市场来说，种菜偷菜才是用户需求痛点！在地图上，有着各种各样的蔬菜，为了获得菜，玩家们乐此不疲的走出家门，奔赴一个又一个的菜点。对于标志性建筑还可以设置为菜园子，贡献度高的玩家可以成为至高无上的地主！2.0版本还支持斗地主！玩法极多，相信一定可以在国内击败pokeman go。好了，现在就差钱开工了，有老板想投资的吗？&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
