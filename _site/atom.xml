@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-06-13T14:46:45+08:00</updated>
+  <updated>2018-06-13T15:38:08+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -68,7 +68,7 @@
 &lt;a href=&quot;https://blog.csdn.net/xyh269/article/details/52613507&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;14、数组在内存中如何分配
-&lt;a href=&quot;https://www.cnblogs.com/chenpi/p/5489732.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://blog.csdn.net/lcl19970203/article/details/54428358&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;java&quot;&gt;JAVA并发&lt;/h2&gt;
 
@@ -152,19 +152,19 @@
 
 &lt;h2 id=&quot;section-1&quot;&gt;数据库&lt;/h2&gt;
 
-&lt;p&gt;1、mysql分页有什么优化&lt;/p&gt;
+&lt;p&gt;1、mysql分页有什么优化&lt;a href=&quot;https://www.cnblogs.com/geningchao/p/6649907.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;2、悲观锁、乐观锁&lt;/p&gt;
+&lt;p&gt;2、悲观锁、乐观锁&lt;a href=&quot;https://blog.csdn.net/rexct392358928/article/details/52230737&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;3、组合索引，最左原则&lt;/p&gt;
+&lt;p&gt;3、组合索引，最左原则&lt;a href=&quot;https://www.cnblogs.com/jamesbd/p/4333901.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;4、mysql 的表锁、行锁&lt;/p&gt;
+&lt;p&gt;4、mysql 的表锁、行锁&lt;a href=&quot;https://www.cnblogs.com/deliver/p/5730616.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;5、mysql 性能优化&lt;/p&gt;
+&lt;p&gt;5、mysql 性能优化&lt;a href=&quot;https://www.cnblogs.com/claireyuancy/p/7258314.html&quot;&gt;答案&lt;/a&gt;&lt;a href=&quot;https://www.cnblogs.com/zhouyusheng/p/8038224.html&quot;&gt;答案2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;6、mysql的索引分类：B+，hash；什么情况用什么索引&lt;/p&gt;
+&lt;p&gt;6、mysql的索引分类：B+，hash；什么情况用什么索引&lt;a href=&quot;https://blog.csdn.net/wuxing26jiayou/article/details/76795015&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;7、事务的特性和隔离级别&lt;/p&gt;
+&lt;p&gt;7、事务的特性和隔离级别&lt;a href=&quot;https://www.cnblogs.com/huanongying/p/7021555.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;缓存&lt;/h2&gt;
 
