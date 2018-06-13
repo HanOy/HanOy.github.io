@@ -153,19 +153,27 @@ Spring
 数据库
 ---
 
-1、mysql分页有什么优化[答案](https://www.cnblogs.com/geningchao/p/6649907.html)
+1、mysql分页有什么优化
+[答案](https://www.cnblogs.com/geningchao/p/6649907.html)
 
-2、悲观锁、乐观锁[答案](https://blog.csdn.net/rexct392358928/article/details/52230737)
+2、悲观锁、乐观锁
+[答案](https://blog.csdn.net/rexct392358928/article/details/52230737)
 
-3、组合索引，最左原则[答案](https://www.cnblogs.com/jamesbd/p/4333901.html)
+3、组合索引，最左原则
+[答案](https://www.cnblogs.com/jamesbd/p/4333901.html)
 
-4、mysql 的表锁、行锁[答案](https://www.cnblogs.com/deliver/p/5730616.html)
+4、mysql 的表锁、行锁
+[答案](https://www.cnblogs.com/deliver/p/5730616.html)
 
-5、mysql 性能优化[答案](https://www.cnblogs.com/claireyuancy/p/7258314.html)[答案2](https://www.cnblogs.com/zhouyusheng/p/8038224.html)
+5、mysql 性能优化
+[答案](https://www.cnblogs.com/claireyuancy/p/7258314.html)
+[答案2](https://www.cnblogs.com/zhouyusheng/p/8038224.html)
 
-6、mysql的索引分类：B+，hash；什么情况用什么索引[答案](https://blog.csdn.net/wuxing26jiayou/article/details/76795015)
+6、mysql的索引分类：B+，hash；什么情况用什么索引
+[答案](https://blog.csdn.net/wuxing26jiayou/article/details/76795015)
 
-7、事务的特性和隔离级别[答案](https://www.cnblogs.com/huanongying/p/7021555.html)
+7、事务的特性和隔离级别
+[答案](https://www.cnblogs.com/huanongying/p/7021555.html)
 
 缓存
 ---
