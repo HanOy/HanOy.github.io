@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-06-13T15:40:57+08:00</updated>
+  <updated>2018-06-15T15:45:38+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -180,7 +180,8 @@
 
 &lt;p&gt;2、Redis缓存穿透，缓存雪崩&lt;/p&gt;
 
-&lt;p&gt;3、如何使用Redis来实现分布式锁&lt;/p&gt;
+&lt;p&gt;3、如何使用Redis来实现分布式锁
+&lt;a href=&quot;https://www.itcodemonkey.com/article/3944.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;4、Redis的并发竞争问题如何解决&lt;/p&gt;
 

@@ -183,6 +183,7 @@ Spring
 2、Redis缓存穿透，缓存雪崩
 
 3、如何使用Redis来实现分布式锁
+[答案](https://www.itcodemonkey.com/article/3944.html)
 
 4、Redis的并发竞争问题如何解决
 
