@@ -122,33 +122,47 @@ Spring
 ---
 
 1、BeanFactory 和 FactoryBean？
+[答案](https://blog.csdn.net/qiesheng/article/details/72875315)
 
 2、Spring IOC 的理解，其初始化过程？
+[答案](https://blog.csdn.net/u010796790/article/details/52623328)
 
 3、BeanFactory 和 ApplicationContext？
+[答案](https://www.cnblogs.com/adealjason/p/6500916.html)
 
 4、Spring Bean 的生命周期，如何被管理的？
+[答案](https://blog.csdn.net/yerenyuan_pku/article/details/52834011)
 
 5、Spring Bean 的加载过程是怎样的？
+[答案](https://www.cnblogs.com/xrq730/p/6285358.html)
 
 6、如果要你实现Spring AOP，请问怎么实现？
+[答案](https://blog.csdn.net/moreevan/article/details/11977115/)
 
 7、如果要你实现Spring IOC，你会注意哪些问题？
+[答案](https://segmentfault.com/a/1190000009139271)
 
 8、Spring 是如何管理事务的，事务管理机制？
+[答案](https://blog.csdn.net/jie_liang/article/details/77600742)
 
 9、Spring 的不同事务传播行为有哪些，干什么用的？
+[答案](https://blog.csdn.net/huaishuming/article/details/48492225)
 
 10、Spring 中用到了那些设计模式？
+[答案](https://www.cnblogs.com/baizhanshi/p/6187537.html)
 
 11、Spring MVC 的工作原理？
+[答案](https://www.cnblogs.com/xiaoxi/p/6164383.html)
 
 12、Spring 循环注入的原理？
+[答案](https://blog.csdn.net/jijianshuai/article/details/78122738)
 
 13、Spring AOP的理解，各个术语，他们是怎么相互工作的？
+[答案](https://blog.csdn.net/qukaiwei/article/details/50367761)
 
 14、Spring 如何保证 Controller 并发的安全？
-
+[答案](https://blog.csdn.net/u010523770/article/details/52458237)
+[答案2](http://blog.51cto.com/lavasoft/1394669)
 
 数据库
 ---
