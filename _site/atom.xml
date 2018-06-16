@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-06-15T17:47:49+08:00</updated>
+  <updated>2018-06-16T15:01:50+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -72,53 +72,80 @@
 
 &lt;h2 id=&quot;java&quot;&gt;JAVA并发&lt;/h2&gt;
 
-&lt;p&gt;1、synchronized 的实现原理以及锁优化？&lt;/p&gt;
+&lt;p&gt;1、synchronized 的实现原理以及锁优化？
+&lt;a href=&quot;https://blog.csdn.net/thousa_ho/article/details/77992743&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;2、volatile 的实现原理？&lt;/p&gt;
+&lt;p&gt;2、volatile 的实现原理？
+&lt;a href=&quot;http://www.importnew.com/23520.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;3、Java 的信号灯？&lt;/p&gt;
+&lt;p&gt;3、Java 的信号灯？
+&lt;a href=&quot;https://blog.csdn.net/u011613354/article/details/51150248&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;4、synchronized 在静态方法和普通方法的区别？&lt;/p&gt;
+&lt;p&gt;4、synchronized 在静态方法和普通方法的区别？
+&lt;a href=&quot;https://www.cnblogs.com/guiqulai/articles/7342006.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;5、怎么实现所有线程在等待某个事件的发生才会去执行？&lt;/p&gt;
+&lt;p&gt;5、怎么实现所有线程在等待某个事件的发生才会去执行？
+&lt;a href=&quot;https://my.oschina.net/qimhkaiyuan/blog/1787438&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;6、CAS？CAS 有什么缺陷，如何解决？&lt;/p&gt;
+&lt;p&gt;6、CAS？CAS 有什么缺陷，如何解决？
+&lt;a href=&quot;https://blog.csdn.net/zhangjq520/article/details/78951830&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;7、synchronized 和 lock 有什么区别？&lt;/p&gt;
+&lt;p&gt;7、synchronized 和 lock 有什么区别？
+&lt;a href=&quot;https://www.cnblogs.com/baizhanshi/p/6419268.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;8、Hashtable 是怎么加锁的 ？&lt;/p&gt;
+&lt;p&gt;8、Hashtable 是怎么加锁的 ？
+&lt;a href=&quot;https://blog.csdn.net/qq_27093465/article/details/52279473&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;9、HashMap 的并发问题？&lt;/p&gt;
+&lt;p&gt;9、HashMap 的并发问题？
+&lt;a href=&quot;https://blog.csdn.net/qq_27093465/article/details/52279473&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;10、ConcurrenHashMap 介绍？1.8 中为什么要用红黑树？&lt;/p&gt;
+&lt;p&gt;10、ConcurrenHashMap 介绍？1.8 中为什么要用红黑树？
+&lt;a href=&quot;https://blog.csdn.net/anig2014/article/details/39476801&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;11、AQS&lt;/p&gt;
+&lt;p&gt;11、AQS
+&lt;a href=&quot;https://www.cnblogs.com/daydaynobug/p/6752837.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;12、如何检测死锁？怎么预防死锁？&lt;/p&gt;
+&lt;p&gt;12、如何检测死锁？怎么预防死锁？
+&lt;a href=&quot;https://blog.csdn.net/ls5718/article/details/51896159&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;13、Java 内存模型？&lt;/p&gt;
+&lt;p&gt;13、Java 内存模型？
+&lt;a href=&quot;https://www.cnblogs.com/_popc/p/6096517.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;14、如何保证多线程下 i++ 结果正确？&lt;/p&gt;
+&lt;p&gt;14、如何保证多线程下 i++ 结果正确？
+&lt;a href=&quot;http://www.mamicode.com/info-detail-1983592.html&quot;&gt;答案&lt;/a&gt;
+&lt;a href=&quot;https://www.cnblogs.com/zemliu/p/3298685.html&quot;&gt;答案2&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;15、线程池的种类，区别和使用场景？&lt;/p&gt;
+&lt;p&gt;15、线程池的种类，区别和使用场景？
+&lt;a href=&quot;https://www.cnblogs.com/sachen/p/7401959.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;16、分析线程池的实现原理和线程的调度过程？&lt;/p&gt;
+&lt;p&gt;16、分析线程池的实现原理和线程的调度过程？
+&lt;a href=&quot;https://blog.csdn.net/hsuxu/article/details/8985931&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;17、线程池如何调优，最大数目如何确认？&lt;/p&gt;
+&lt;p&gt;17、线程池如何调优，最大数目如何确认？
+&lt;a href=&quot;https://www.cnblogs.com/jianzh5/p/6437315.html&quot;&gt;答案&lt;/a&gt;
+&lt;a href=&quot;http://www.importnew.com/17384.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;18、ThreadLocal原理，用的时候需要注意什么？&lt;/p&gt;
+&lt;p&gt;18、ThreadLocal原理，用的时候需要注意什么？
+&lt;a href=&quot;https://blog.csdn.net/sonny543/article/details/51336457&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;19、CountDownLatch 和 CyclicBarrier 的用法，以及相互之间的差别?&lt;/p&gt;
+&lt;p&gt;19、CountDownLatch 和 CyclicBarrier 的用法，以及相互之间的差别?
+&lt;a href=&quot;https://www.cnblogs.com/dolphin0520/p/3920397.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;20、LockSupport工具&lt;/p&gt;
+&lt;p&gt;20、LockSupport工具
+&lt;a href=&quot;https://blog.csdn.net/congduan/article/details/48710129&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;21、Condition接口及其实现原理&lt;/p&gt;
+&lt;p&gt;21、Condition接口及其实现原理
+&lt;a href=&quot;https://blog.csdn.net/fuyuwei2015/article/details/72602182&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;22、Fork/Join框架的理解&lt;/p&gt;
+&lt;p&gt;22、Fork/Join框架的理解
+&lt;a href=&quot;https://blog.csdn.net/timheath/article/details/71307834&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;23、分段锁的原理,锁力度减小的思考&lt;/p&gt;
+&lt;p&gt;23、分段锁的原理,锁力度减小的思考
+&lt;a href=&quot;http://guochenglai.com/2016/06/04/java-concurrent4-java-subsection-decompose/&quot;&gt;答案&lt;/a&gt;
+&lt;a href=&quot;https://blog.csdn.net/u010853261/article/details/54314486&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;24、八种阻塞队列以及各个阻塞队列的特性&lt;/p&gt;
+&lt;p&gt;24、八种阻塞队列以及各个阻塞队列的特性
+&lt;a href=&quot;https://www.cnblogs.com/yjmyzz/p/BlockingQueue-in-java.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;spring&quot;&gt;Spring&lt;/h2&gt;
 
@@ -191,50 +218,70 @@
 
 &lt;h2 id=&quot;section-2&quot;&gt;缓存&lt;/h2&gt;
 
-&lt;p&gt;1、Redis用过哪些数据数据，以及Redis底层怎么实现&lt;/p&gt;
+&lt;p&gt;1、Redis用过哪些数据数据，以及Redis底层怎么实现
+&lt;a href=&quot;http://www.mamicode.com/info-detail-1776966.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;2、Redis缓存穿透，缓存雪崩&lt;/p&gt;
+&lt;p&gt;2、Redis缓存穿透，缓存雪崩
+&lt;a href=&quot;https://www.cnblogs.com/zhangweizhong/p/6258797.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;3、如何使用Redis来实现分布式锁
 &lt;a href=&quot;https://www.itcodemonkey.com/article/3944.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;4、Redis的并发竞争问题如何解决&lt;/p&gt;
+&lt;p&gt;4、Redis的并发竞争问题如何解决
+&lt;a href=&quot;https://blog.csdn.net/happy_wu/article/details/78736641&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;5、Redis持久化的几种方式，优缺点是什么，怎么实现的&lt;/p&gt;
+&lt;p&gt;5、Redis持久化的几种方式，优缺点是什么，怎么实现的
+&lt;a href=&quot;https://www.cnblogs.com/ssssdy/p/7132856.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;6、Redis的缓存失效策略&lt;/p&gt;
+&lt;p&gt;6、Redis的缓存失效策略
+&lt;a href=&quot;https://www.cnblogs.com/moonandstar08/p/5686498.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;7、Redis集群，高可用，原理&lt;/p&gt;
+&lt;p&gt;7、Redis集群，高可用，原理
+&lt;a href=&quot;https://www.cnblogs.com/liyasong/p/redis_jiqun.html?utm_source=itdadao&amp;amp;utm_medium=referral&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;8、Redis缓存分片&lt;/p&gt;
+&lt;p&gt;8、Redis缓存分片
+&lt;a href=&quot;https://www.cnblogs.com/houziwty/p/5167075.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;9、Redis的数据淘汰策略&lt;/p&gt;
+&lt;p&gt;9、Redis的数据淘汰策略
+&lt;a href=&quot;https://blog.csdn.net/suibo0912hf/article/details/51684625&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;jvm&quot;&gt;JVM&lt;/h2&gt;
 
-&lt;p&gt;1、详细jvm内存模型&lt;/p&gt;
+&lt;p&gt;1、详细jvm内存模型
+&lt;a href=&quot;https://blog.csdn.net/genius_ge/article/details/76151179&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;2、讲讲什么情况下回出现内存溢出，内存泄漏？&lt;/p&gt;
+&lt;p&gt;2、讲讲什么情况下回出现内存溢出，内存泄漏？
+&lt;a href=&quot;https://blog.csdn.net/zlts000/article/details/53046620&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;3、说说Java线程栈&lt;/p&gt;
+&lt;p&gt;3、说说Java线程栈
+&lt;a href=&quot;https://blog.csdn.net/hust_superman/article/details/39402087&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;4、JVM 年轻代到年老代的晋升过程的判断条件是什么呢？&lt;/p&gt;
+&lt;p&gt;4、JVM 年轻代到年老代的晋升过程的判断条件是什么呢？
+&lt;a href=&quot;https://blog.csdn.net/cpcpcp123/article/details/51262940&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;5、JVM 出现 fullGC 很频繁，怎么去线上排查问题？&lt;/p&gt;
+&lt;p&gt;5、JVM 出现 fullGC 很频繁，怎么去线上排查问题？
+&lt;a href=&quot;https://blog.csdn.net/wilsonpeng3/article/details/70064336/&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;6、类加载为什么要使用双亲委派模式，有没有什么场景是打破了这个模式？&lt;/p&gt;
+&lt;p&gt;6、类加载为什么要使用双亲委派模式，有没有什么场景是打破了这个模式？
+&lt;a href=&quot;https://my.oschina.net/aminqiao/blog/262601&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;7、类的实例化顺序&lt;/p&gt;
+&lt;p&gt;7、类的实例化顺序
+&lt;a href=&quot;https://www.cnblogs.com/SirSmith/p/5536288.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;8、JVM垃圾回收机制，何时触发MinorGC等操作&lt;/p&gt;
+&lt;p&gt;8、JVM垃圾回收机制，何时触发MinorGC等操作
+&lt;a href=&quot;https://blog.csdn.net/caomiao2006/article/details/47756233&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;9、JVM 中一次完整的 GC 流程（从 ygc 到 fgc）是怎样的&lt;/p&gt;
+&lt;p&gt;9、JVM 中一次完整的 GC 流程（从 ygc 到 fgc）是怎样的
+&lt;a href=&quot;https://blog.csdn.net/qq_33919114/article/details/79312612&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;10、各种回收器，各自优缺点，重点CMS、G1&lt;/p&gt;
+&lt;p&gt;10、各种回收器，各自优缺点，重点CMS、G1
+&lt;a href=&quot;https://blog.csdn.net/qq_25396633/article/details/72972008&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;11、各种回收算法&lt;/p&gt;
+&lt;p&gt;11、各种回收算法
+&lt;a href=&quot;https://www.cnblogs.com/guozhenqiang/p/5621665.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;12、OOM错误，stackoverflow错误，permgen space错误&lt;/p&gt;
+&lt;p&gt;12、OOM错误，stackoverflow错误，permgen space错误
+&lt;a href=&quot;https://blog.csdn.net/sinat_29912455/article/details/51125748&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
