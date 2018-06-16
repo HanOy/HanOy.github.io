@@ -9,7 +9,7 @@ disqus_comments: true
 description: chenssy在某次跳槽中整理的Java面试大纲，及我整理中的答案
 ---
 
-大纲来源
+大纲大部分来源
 ---
 
 作者：占小狼
@@ -284,3 +284,13 @@ JVM
 
 12、OOM错误，stackoverflow错误，permgen space错误
 [答案](https://blog.csdn.net/sinat_29912455/article/details/51125748)
+
+
+其他
+---
+
+1、RPC
+[答案](https://www.zhihu.com/question/25536695)
+
+2、SOA
+[答案](https://www.cnblogs.com/renzhitian/p/6853289.html)

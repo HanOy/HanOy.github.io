@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-06-16T15:01:50+08:00</updated>
+  <updated>2018-06-16T15:11:21+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -15,7 +15,7 @@
     <link href="http://ouyanghan.com/interview"/>
     <updated>2018-06-12T00:00:00+08:00</updated>
     <id>http://ouyanghan.com/interview</id>
-    <content type="html">&lt;h2 id=&quot;section&quot;&gt;大纲来源&lt;/h2&gt;
+    <content type="html">&lt;h2 id=&quot;section&quot;&gt;大纲大部分来源&lt;/h2&gt;
 
 &lt;p&gt;作者：占小狼&lt;/p&gt;
 
@@ -282,6 +282,14 @@
 
 &lt;p&gt;12、OOM错误，stackoverflow错误，permgen space错误
 &lt;a href=&quot;https://blog.csdn.net/sinat_29912455/article/details/51125748&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;其他&lt;/h2&gt;
+
+&lt;p&gt;1、RPC
+&lt;a href=&quot;https://www.zhihu.com/question/25536695&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2、SOA
+&lt;a href=&quot;https://www.cnblogs.com/renzhitian/p/6853289.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
