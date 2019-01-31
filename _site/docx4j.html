@@ -79,8 +79,8 @@
 
 <p>来看一下<a href="https://github.com/plutext/docx4j/tree/master/src/samples/docx4j/org/docx4j/samples">官方github的demo</a>:</p>
 
-<h2 id="docxcreatewordprocessingmldocumentjava">新建一个.docx文件，CreateWordprocessingMLDocument.java</h2>
-<div class="highlighter-rouge"><pre class="highlight"><code>public static void main(String[] args) throws Exception {
+<h2 id="新建一个docx文件createwordprocessingmldocumentjava">新建一个.docx文件，CreateWordprocessingMLDocument.java</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static void main(String[] args) throws Exception {
 	WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.createPackage();
 	MainDocumentPart mdp = wordMLPackage.getMainDocumentPart();
 	
@@ -111,14 +111,12 @@
 	wordMLPackage.save(new java.io.File(filename) );
 	System.out.println("Saved " + filename);
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>example 3 有点烦，就给去掉了。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>	MainDocumentPart mdp = wordMLPackage.getMainDocumentPart();
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	MainDocumentPart mdp = wordMLPackage.getMainDocumentPart();
+</code></pre></div></div>
 
 <p>这段代码mdp获取的到的，其实就是用压缩工具打开的.docx文档中的document.xml文件的内容，
 而我们对mdp操作也就是直接操作document.xml，最后通过document.xml来生成.docx文档。</p>
@@ -129,7 +127,7 @@
 
 <p>根据我的需求，既然word模板有了，我就解压出来找到document.xml，把里面的内容复制出来再清空。通过代码自己去新增，所以我需要修改复制出来的内容，在需要赋值的地方，把查出来的值放进去。虽然比较笨，但还是保持了word文档的一致性，简直一模一样。一些代码如下：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>for (RepairMaterialsPojo material : pojo.getMaterials()) {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for (RepairMaterialsPojo material : pojo.getMaterials()) {
     String tr = "&lt;w:tr&gt;&lt;w:tblPrEx&gt;&lt;w:tblBorders&gt;&lt;w:top w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:left w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:bottom w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:right w:color=\"auto\" w:space=\"0\" w:sz=\"12\" w:val=\"single\"/&gt;&lt;w:insideH w:color=\"auto\" w:space=\"0\" w:sz=\"6\" w:val=\"single\"/&gt;&lt;w:insideV w:color=\"auto\" w:space=\"0\" w:sz=\"6\" w:val=\"single\"/&gt;&lt;/w:tblBorders&gt;&lt;w:tblLayout w:type=\"fixed\"/&gt;&lt;w:tblCellMar&gt;&lt;w:top w:type=\"dxa\" w:w=\"0\"/&gt;&lt;w:left w:type=\"dxa\" w:w=\"108\"/&gt;&lt;w:bottom w:type=\"dxa\" w:w=\"0\"/&gt;&lt;w:right w:type=\"dxa\" w:w=\"108\"/&gt;&lt;/w:tblCellMar&gt;&lt;/w:tblPrEx&gt;&lt;w:trPr&gt;&lt;w:trHeight w:hRule=\"atLeast\" w:val=\"302\"/&gt;&lt;/w:trPr&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"719\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + index + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"2682\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
         .getMaterialName() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"1433\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
             .getMaterialModel() + "&lt;/w:t&gt;&lt;/w:r&gt;&lt;/w:p&gt;&lt;/w:tc&gt;&lt;w:tc&gt;&lt;w:tcPr&gt;&lt;w:tcW w:type=\"dxa\" w:w=\"813\"/&gt;&lt;w:vAlign w:val=\"center\"/&gt;&lt;/w:tcPr&gt;&lt;w:p&gt;&lt;w:pPr&gt;&lt;w:jc w:val=\"center\"/&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;/w:pPr&gt;&lt;w:r&gt;&lt;w:rPr&gt;&lt;w:rFonts w:hint=\"eastAsia\"/&gt;&lt;/w:rPr&gt;&lt;w:t&gt;" + material
@@ -141,15 +139,13 @@
     tbl_tr.append(tr);
     index++;
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>最后生成pdf比较简单：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>OutputStream os = new FileOutputStream(destPath);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OutputStream os = new FileOutputStream(destPath);
 Docx4J.toPDF(wordMLPackage, os);
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>遇到了一个坑，就是生成pdf有点慢，在本地调试接口的时候每次都是响应时间都过了还没好，但放到服务器上就没有问题了。</p>
 </div>

@@ -3,7 +3,7 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2018-06-16T15:11:21+08:00</updated>
+  <updated>2019-01-31T15:51:57+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
@@ -15,7 +15,7 @@
     <link href="http://ouyanghan.com/interview"/>
     <updated>2018-06-12T00:00:00+08:00</updated>
     <id>http://ouyanghan.com/interview</id>
-    <content type="html">&lt;h2 id=&quot;section&quot;&gt;大纲大部分来源&lt;/h2&gt;
+    <content type="html">&lt;h2 id=&quot;大纲大部分来源&quot;&gt;大纲大部分来源&lt;/h2&gt;
 
 &lt;p&gt;作者：占小狼&lt;/p&gt;
 
@@ -25,7 +25,7 @@
 
 &lt;p&gt;著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。&lt;/p&gt;
 
-&lt;h2 id=&quot;java-&quot;&gt;JAVA 基础&lt;/h2&gt;
+&lt;h2 id=&quot;java-基础&quot;&gt;JAVA 基础&lt;/h2&gt;
 
 &lt;p&gt;1、List 和 Set 的区别
 &lt;a href=&quot;https://www.cnblogs.com/IvesHe/p/6108933.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
@@ -70,7 +70,7 @@
 &lt;p&gt;14、数组在内存中如何分配
 &lt;a href=&quot;https://blog.csdn.net/lcl19970203/article/details/54428358&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;java&quot;&gt;JAVA并发&lt;/h2&gt;
+&lt;h2 id=&quot;java并发&quot;&gt;JAVA并发&lt;/h2&gt;
 
 &lt;p&gt;1、synchronized 的实现原理以及锁优化？
 &lt;a href=&quot;https://blog.csdn.net/thousa_ho/article/details/77992743&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
@@ -192,7 +192,7 @@
 &lt;a href=&quot;https://blog.csdn.net/u010523770/article/details/52458237&quot;&gt;答案&lt;/a&gt;
 &lt;a href=&quot;http://blog.51cto.com/lavasoft/1394669&quot;&gt;答案2&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;数据库&lt;/h2&gt;
+&lt;h2 id=&quot;数据库&quot;&gt;数据库&lt;/h2&gt;
 
 &lt;p&gt;1、mysql分页有什么优化
 &lt;a href=&quot;https://www.cnblogs.com/geningchao/p/6649907.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
@@ -216,7 +216,7 @@
 &lt;p&gt;7、事务的特性和隔离级别
 &lt;a href=&quot;https://www.cnblogs.com/huanongying/p/7021555.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;缓存&lt;/h2&gt;
+&lt;h2 id=&quot;缓存&quot;&gt;缓存&lt;/h2&gt;
 
 &lt;p&gt;1、Redis用过哪些数据数据，以及Redis底层怎么实现
 &lt;a href=&quot;http://www.mamicode.com/info-detail-1776966.html&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
@@ -283,7 +283,7 @@
 &lt;p&gt;12、OOM错误，stackoverflow错误，permgen space错误
 &lt;a href=&quot;https://blog.csdn.net/sinat_29912455/article/details/51125748&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;section-3&quot;&gt;其他&lt;/h2&gt;
+&lt;h2 id=&quot;其他&quot;&gt;其他&lt;/h2&gt;
 
 &lt;p&gt;1、RPC
 &lt;a href=&quot;https://www.zhihu.com/question/25536695&quot;&gt;答案&lt;/a&gt;&lt;/p&gt;
@@ -317,159 +317,26 @@
   </entry>
   
   <entry>
-    <title>李志-这个世界会好吗</title>
-    <link href="http://ouyanghan.com/thisworldisnotok"/>
-    <updated>2018-03-19T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/thisworldisnotok</id>
-    <content type="html">&lt;html&gt;
-&lt;head&gt;
-	&lt;title&gt;这个世界会好吗？&lt;/title&gt;
-	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
-	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot; /&gt;
-	&lt;style type=&quot;text/css&quot;&gt;
-        div.tweet p {
-            -moz-border-bottom-colors: none;
-            -moz-border-left-colors: none;
-            -moz-border-right-colors: none;
-            -moz-border-top-colors: none;
-            background-color: #fbfbfb;
-            border-color: #aaa #aaa #aaa #f28500;
-            border-image: none;
-            border-style: solid;
-            border-width: 1px 1px 1px 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            padding: 2px 0.5em;
-            margin: 3% 8%;
-        }
-        div.tweet i {
-            border: 1px solid #aaa;
-            color: brown;
-            font-size: 14px;
-            font-style: normal;
-            margin-right: 0.5em;
-            padding: 0 2px;
-        }
-        H2 {
-            border-bottom: 2px solid LightGrey;
-            color: #666666;
-            font-family: &quot;Palatino Linotype&quot;,&quot;Book Antiqua&quot;,Palatino,Helvetica,STKaiti,SimSun,serif;
-            line-height: 150%;
-            margin-bottom: 40px;
-            padding: 5px;
-            width: 98%;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;h2 id=&quot;title&quot;&gt;妈妈，他们抛弃了我&lt;/h2&gt;
-	&lt;div class=&quot;tweet&quot;&gt;
-		&lt;p&gt;&lt;a href=&quot;thisworldisnotok/mp3/1.mp3&quot;&gt;这个世界会好吗 (2015动静版)&lt;/a&gt;&lt;/p&gt;
-		&lt;p&gt;&lt;a href=&quot;thisworldisnotok/mp3/2.mp3&quot;&gt;这个世界会好吗 (2016 unplugged)&lt;/a&gt;&lt;/p&gt;
-		&lt;p&gt;&lt;a href=&quot;thisworldisnotok/mp3/3.mp3&quot;&gt;这个世界会好吗（2013版）&lt;/a&gt;&lt;/p&gt;
-		&lt;p&gt;&lt;a href=&quot;thisworldisnotok/mp3/4.mp3&quot;&gt;这个世界会好吗(2014i／O版)&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&quot;thisworldisnotok/mp3/5.mp3&quot;&gt;这个世界会好吗（工体）&lt;/a&gt;&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/body&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://mediaplayer.yahoo.com/js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>李志-下雨</title>
-    <link href="http://ouyanghan.com/rain"/>
-    <updated>2018-03-19T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/rain</id>
-    <content type="html">&lt;html&gt;
-&lt;head&gt;
-	&lt;title&gt;下起了雨，你感到冷吗？&lt;/title&gt;
-	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
-	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot; /&gt;
-	&lt;style type=&quot;text/css&quot;&gt;
-        div.tweet p {
-            -moz-border-bottom-colors: none;
-            -moz-border-left-colors: none;
-            -moz-border-right-colors: none;
-            -moz-border-top-colors: none;
-            background-color: #fbfbfb;
-            border-color: #aaa #aaa #aaa #f28500;
-            border-image: none;
-            border-style: solid;
-            border-width: 1px 1px 1px 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            padding: 2px 0.5em;
-            margin: 3% 8%;
-        }
-        div.tweet i {
-            border: 1px solid #aaa;
-            color: brown;
-            font-size: 14px;
-            font-style: normal;
-            margin-right: 0.5em;
-            padding: 0 2px;
-        }
-        H2 {
-            border-bottom: 2px solid LightGrey;
-            color: #666666;
-            font-family: &quot;Palatino Linotype&quot;,&quot;Book Antiqua&quot;,Palatino,Helvetica,STKaiti,SimSun,serif;
-            line-height: 150%;
-            margin-bottom: 40px;
-            padding: 5px;
-            width: 98%;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;h2 id=&quot;title&quot;&gt;你好，查水表&lt;/h2&gt;
-	&lt;div class=&quot;tweet&quot;&gt;
-		&lt;p&gt;&lt;a href=&quot;rain/mp3/1.mp3&quot;&gt;下雨&amp;amp;董卓瑶&amp;amp;忽然(2014i／O版)&lt;/a&gt;&lt;/p&gt;
-		&lt;p&gt;&lt;a href=&quot;rain/mp3/2.mp3&quot;&gt;下雨&lt;/a&gt;&lt;/p&gt;
-		&lt;p&gt;&lt;a href=&quot;rain/mp3/3.mp3&quot;&gt;下雨2013版[Live]&lt;/a&gt;&lt;/p&gt;
-		&lt;p&gt;&lt;a href=&quot;rain/mp3/4.mp3&quot;&gt;下雨 2015现场版&lt;/a&gt;&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/body&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://mediaplayer.yahoo.com/js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-	document.getElementById(&quot;title&quot;).addEventListener(&quot;click&quot;, function(){
-		window.location.href = &quot;http://ouyanghan.com&quot;;
-	}); 
-&lt;/script&gt;
-&lt;/html&gt;
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
     <title>div模拟输入框实现高度自适应</title>
     <link href="http://ouyanghan.com/div"/>
     <updated>2017-08-30T00:00:00+08:00</updated>
     <id>http://ouyanghan.com/div</id>
-    <content type="html">&lt;h2 id=&quot;section&quot;&gt;需求&lt;/h2&gt;
+    <content type="html">&lt;h2 id=&quot;需求&quot;&gt;需求&lt;/h2&gt;
 &lt;p&gt;工单详情里的一个随时可修改的备注框。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;问题&lt;/h2&gt;
+&lt;h2 id=&quot;问题&quot;&gt;问题&lt;/h2&gt;
 &lt;p&gt;input标签只能单行，备注可能很多，在手机上展示不全。
 textarea标签，高度自适应需要用js控制，实现起来略麻烦。&lt;/p&gt;
 
-&lt;h2 id=&quot;div&quot;&gt;解决——div模拟输入框实现高度自适应&lt;/h2&gt;
+&lt;h2 id=&quot;解决div模拟输入框实现高度自适应&quot;&gt;解决——div模拟输入框实现高度自适应&lt;/h2&gt;
 &lt;p&gt;使用很简单，如下：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div contenteditable=&quot;true&quot;&amp;gt;&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div contenteditable=&quot;true&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;网页上测试并没有多大问题，就是用js获取焦点时输入的光标每次都会在最前面。解决方法如下：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (window.getSelection) {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (window.getSelection) {
     obj.focus(); //解决ff不获取焦点无法定位问题
     var range = window.getSelection();//创建range
     range.selectAllChildren(obj);//range 选择obj下所有子内容
@@ -480,21 +347,18 @@ textarea标签，高度自适应需要用js控制，实现起来略麻烦。&lt;
     range.collapse(false);//光标移至最后
     range.select();
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;最后发现在ios设备上，并没有效果，后来发现还需要添加这个样式：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-webkit-user-select: text;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-webkit-user-select: text;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;最后是效果：&lt;/p&gt;
 &lt;div contenteditable=&quot;true&quot; style=&quot;border: 1px solid;-webkit-user-select: text;&quot;&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div contenteditable=&quot;true&quot; style=&quot;border: 1px solid;-webkit-user-select: text;&quot;&amp;gt;&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div contenteditable=&quot;true&quot; style=&quot;border: 1px solid;-webkit-user-select: text;&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
     <author>
       <name>ouyanghan</name>
@@ -511,11 +375,10 @@ textarea标签，高度自适应需要用js控制，实现起来略麻烦。&lt;
 
 &lt;p&gt;点击搜索后强行将input焦点移出来也并不管用：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(&#39;searchBtn&#39;).click(function() {
-	$(&#39;input&#39;).blur();	
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$('searchBtn').click(function() {
+	$('input').blur();	
 })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;问题出在使用了神奇的iframe上，这个时候就要派出更神奇的$(window)了：&lt;/p&gt;
 
@@ -523,26 +386,24 @@ textarea标签，高度自适应需要用js控制，实现起来略麻烦。&lt;
 
 &lt;h2 id=&quot;step-1&quot;&gt;step 1&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var inputFocused = false;
-$(&#39;input&#39;).focus(function() {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var inputFocused = false;
+$('input').focus(function() {
     setTimeout(function() {
         inputFocused = true;
     },100);
 });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-2&quot;&gt;step 2&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(window).click(function() {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$(window).click(function() {
     if(inputFocused == true) {
         $(window).focus();
-        $(&#39;input&#39;).blur();
+        $('input').blur();
         inputFocused = false;
     }
 });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;至于为什么要加setTimeOut方法是因为 $(window).click()事件包括了屏幕上所有的点击，所以要让inputFocused为true有一些延迟咯 :)&lt;/p&gt;
@@ -618,64 +479,63 @@ $(&#39;input&#39;).focus(function() {
 &lt;p&gt;效果图：
 &lt;img src=&quot;/res/world.jpg&quot; width=&quot;280&quot; height=&quot;480&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;代码：&lt;/p&gt;
+&lt;p&gt;代码：
+    ```html
+	&amp;lt;!DOCTYPE HTML&amp;gt;
+	&amp;lt;html&amp;gt;
+	  &amp;lt;head&amp;gt;
+	    &lt;script src=&quot;http://www.webglearth.com/v2/api.js&quot;&gt;&lt;/script&gt;
+	    &lt;script&gt;
+	    	var earth;
+	    	var marker;
+	      function initialize() {
+	        earth = new WE.map('earth_div',{
+	        	atmosphere:true,
+	        	sky:true
+	        });
+	        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+	          attribution: '© OpenStreetMap contributors'
+	        }).addTo(earth);&lt;/script&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.webglearth.com/v2/api.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-    	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;earth_div&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
-        	&lt;span class=&quot;na&quot;&gt;atmosphere&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        	&lt;span class=&quot;na&quot;&gt;sky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tileLayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;attribution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;© OpenStreetMap contributors&#39;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;		marker = WE.marker([31.198248, 121.448596]).addTo(earth);
+        marker.bindPopup(&quot;&amp;lt;b&amp;gt;Hello world!&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;I am here.&amp;lt;br /&amp;gt;&quot;, {maxWidth: 100, closeButton: true});
 
-		&lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;31.198248&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;121.448596&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bindPopup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;b&amp;gt;Hello world!&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;I am here.&amp;lt;br /&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;maxWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;closeButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+        var marker1 = WE.marker([26.053351, 113.037404]).addTo(earth);
+        marker1.bindPopup(&quot;&amp;lt;b&amp;gt;where I grow up.&amp;lt;br /&amp;gt;&quot;, {maxWidth: 100, closeButton: true});
 
-        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;marker1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;26.053351&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;113.037404&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;marker1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bindPopup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;b&amp;gt;where I grow up.&amp;lt;br /&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;maxWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;closeButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-        &lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;34.262278&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;103.628637&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;flyToMe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;panInsideBounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;31.056144060646687&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;31.38522435978879&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;120.78966784638101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;122.19440192910949&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//earth.panTo([31.198248, 121.448596]);&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;openPopup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      	&lt;span class=&quot;c1&quot;&gt;//earth.setView([34.262278, 103.628637], 3);&lt;/span&gt;
-      	&lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;panInsideBounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;10.32268236188567&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;48.86931220325214&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;63.53559837081185&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;143.72167565826413&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-      	&lt;span class=&quot;nx&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePopup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      	&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;earth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getBounds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
-      &lt;span class=&quot;nf&quot;&gt;#earth_div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
-      &lt;span class=&quot;nf&quot;&gt;#buttons&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;欧阳晗-WebGL Earth API: Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onload=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;initialize()&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;wx_logo&#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;margin:0 auto;display:none;&#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;../favicon.jpg&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;earth_div&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;buttons&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Fly to Me&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;flyToMe();&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width:120px;height:40px;border:2px #9999FF dashed;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;back&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;back();&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width:120px;height:40px;border:2px #9999FF dashed;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+        earth.setView([34.262278, 103.628637], 3);
+      }
+      function flyToMe() {
+        earth.panInsideBounds([31.056144060646687, 31.38522435978879, 120.78966784638101, 122.19440192910949])
+        //earth.panTo([31.198248, 121.448596]);
+        marker.openPopup();
+      }
+      function back() {
+      	//earth.setView([34.262278, 103.628637], 3);
+      	earth.panInsideBounds([10.32268236188567, 48.86931220325214, 63.53559837081185, 143.72167565826413])
+      	marker.closePopup();
+      	console.log(earth.getBounds());
+      }
+    &amp;lt;/script&amp;gt;
+    &amp;lt;style&amp;gt;
+      html, body{padding: 0; margin: 0;}
+      #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
+      #buttons {position: absolute; top:50px; left: 50px;}
+    &amp;lt;/style&amp;gt;
+    &amp;lt;title&amp;gt;欧阳晗-WebGL Earth API: Hello World&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body onload=&quot;initialize()&quot;&amp;gt;
+  	&amp;lt;div id='wx_logo' style='margin:0 auto;display:none;'&amp;gt;
+    	&amp;lt;img src=&quot;../favicon.jpg&quot; /&amp;gt;
+	&amp;lt;/div&amp;gt;
+    &amp;lt;div id=&quot;earth_div&quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;div id=&quot;buttons&quot;&amp;gt;
+      &amp;lt;input type=&quot;button&quot; value=&quot;Fly to Me&quot; onclick=&quot;flyToMe();&quot; style=&quot;width:120px;height:40px;border:2px #9999FF dashed;&quot;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+      &amp;lt;input type=&quot;button&quot; value=&quot;back&quot; onclick=&quot;back();&quot; style=&quot;width:120px;height:40px;border:2px #9999FF dashed;&quot;&amp;gt;&amp;lt;br&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
     <author>
       <name>ouyanghan</name>
@@ -737,6 +597,62 @@ $(&#39;input&#39;).focus(function() {
 &lt;p&gt;我还想到美剧《硅谷》里关于做平台还是做盒子的冲突。只关心公司市值的CEO想做一个基于男主技术的盒子，这样可以迅速产生利润拿到下一轮的钱。但想让自己的技术show给更多人的男主们却想做一个平台，希望更多的普通人喜欢他们的技术。虽然故事最后他们确实做了平台，那位CEO也下课了，但还是有种种原因公司拿不到下一轮融资破产而被收购。可能这就是现实与理想的差距吧，好了吐槽完了，得赶紧改bug去了。&lt;/p&gt;
 
 &lt;p&gt;对了，收购的人是男主的好朋友，所以在下一季估计他们就能改变世界了~&lt;/p&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>聊聊pokeman go</title>
+    <link href="http://ouyanghan.com/pokemango"/>
+    <updated>2016-07-13T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/pokemango</id>
+    <content type="html">&lt;p&gt;任天堂、精灵宝可梦、Niantic合作推出的Pokemon Go《口袋妖怪Go》最近火的一塌糊涂。&lt;/p&gt;
+
+&lt;p&gt;虽然那个锁区的长方形框住了上海，抓不了小精灵，我还是把它给下下来感受了一把，毕竟还有新手教程可以抓一只妙蛙种子呢:P&lt;/p&gt;
+
+&lt;p&gt;打开游戏，开启定位功能之后，游戏会在摄像头实时拍摄的画面中叠加小精灵，这些精灵可能会藏在任何角落，你需要拿着手机四处走动，发现它并且抓住它。不得不说打开了游戏方式新的大门。基于的技术呢主要就是AR（增强现实，简单说就是虚拟的小精灵套在现实世界）和LBS（基于位置服务，简单说就是定位）。&lt;/p&gt;
+
+&lt;h2 id=&quot;lbs&quot;&gt;LBS&lt;/h2&gt;
+&lt;p&gt;先来看看LBS，国内最完备的无非就是百度地图和高德地图咯，但是pokeman go却是基于google地图的。2010年谷歌退出中国了，地图不准是应该的，但游戏地图里的数据居然会这么不准确！！当你真的去玩了就知道游戏里的地图是多么不准确了。给大家看看我截下来的图。。这可是上海徐家汇附近，不是什么犄角旮旯的地方。&lt;/p&gt;
+&lt;div&gt;
+	&lt;img src=&quot;/res/pokemango.jpg&quot; width=&quot;210&quot; height=&quot;360&quot; style=&quot;display:inline-block;vertical-align:right&quot; /&gt;
+	&lt;img src=&quot;/res/pokeman3.jpg&quot; width=&quot;280&quot; height=&quot;360&quot; style=&quot;display:inline-block;vertical-align:left&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;当你走到游戏地图的湖边想抓一只水系的小精灵，但是发现这里早已是一幢高楼，这个游戏体验得摔手机了。&lt;/p&gt;
+
+&lt;h2 id=&quot;ar&quot;&gt;AR&lt;/h2&gt;
+&lt;p&gt;来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app&lt;a href=&quot;http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba&quot;&gt;随便走&lt;/a&gt;，基于AR+LBS的导航，也是挺有意思的。还有宜家的app&lt;a href=&quot;http://www.ikea.com/ms/zh_CN/campaigns/catalogue_2016/index.html&quot;&gt;家居指南&lt;/a&gt;，可以把虚拟家具直接放在家里看效果，cool~&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/pokemango2.jpg&quot; width=&quot;220&quot; height=&quot;380&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;与其期待pokeman go在国服能愉快的玩耍，还不如期待国内跟风开发出来的带本土特色的类似游戏呢，毕竟技术上也不是难点。&lt;/p&gt;
+
+&lt;p&gt;所以在我看来，对于中国市场来说，种菜偷菜才是用户需求痛点！在地图上，有着各种各样的蔬菜，为了获得菜，玩家们乐此不疲的走出家门，奔赴一个又一个的菜点。对于标志性建筑还可以设置为菜园子，贡献度高的玩家可以成为至高无上的地主！2.0版本还支持斗地主！玩法极多，相信一定可以在国内击败pokeman go。好了，现在就差钱开工了，有老板想投资的吗？&lt;/p&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>冲动是可以用写代码来抑制的吧</title>
+    <link href="http://ouyanghan.com/mood"/>
+    <updated>2016-06-13T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/mood</id>
+    <content type="html">&lt;p&gt;心血来潮想写点啥&lt;/p&gt;
+
+&lt;p&gt;写着写着&lt;/p&gt;
+
+&lt;p&gt;又来bug了&lt;/p&gt;
+
+&lt;p&gt;bug解决完了&lt;/p&gt;
+
+&lt;p&gt;潮已经退了&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>

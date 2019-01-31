@@ -65,11 +65,10 @@
 
 <p>点击搜索后强行将input焦点移出来也并不管用：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$('searchBtn').click(function() {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$('searchBtn').click(function() {
 	$('input').blur();	
 })
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>问题出在使用了神奇的iframe上，这个时候就要派出更神奇的$(window)了：</p>
 
@@ -77,26 +76,24 @@
 
 <h2 id="step-1">step 1</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var inputFocused = false;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var inputFocused = false;
 $('input').focus(function() {
     setTimeout(function() {
         inputFocused = true;
     },100);
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="step-2">step 2</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$(window).click(function() {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(window).click(function() {
     if(inputFocused == true) {
         $(window).focus();
         $('input').blur();
         inputFocused = false;
     }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 <p>至于为什么要加setTimeOut方法是因为 $(window).click()事件包括了屏幕上所有的点击，所以要让inputFocused为true有一些延迟咯 :)</p>
