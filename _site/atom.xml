@@ -3,12 +3,126 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2019-01-31T16:00:38+08:00</updated>
+  <updated>2019-01-31T17:12:18+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
     <email>oyh3745@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>日志aop</title>
+    <link href="http://ouyanghan.com/logaspect"/>
+    <updated>2019-01-31T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/logaspect</id>
+    <content type="html">&lt;p&gt;代码：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Aspect
+public class LogAspect {
+
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+	private String requestPath = null ; // 请求地址
+	private Map&amp;lt;?,?&amp;gt; inputParamMap = null ; // 传入参数
+	private Map&amp;lt;String, Object&amp;gt; outputParamMap = null; // 存放输出结果
+	private long startTimeMillis = 0; // 开始时间
+	private long endTimeMillis = 0; // 结束时间
+	private String requestMethod;
+	private String jsonParams;
+
+	/**
+	 * 
+	 * @Title：doBeforeInServiceLayer
+	 * @Description: 方法调用前触发 
+	 * @param joinPoint
+	 */
+	@Before(&quot;execution(* com.xxx.controller..*.*(..))&quot;)
+	public void doBeforeInServiceLayer(JoinPoint joinPoint) {
+		RequestAttributes ra = RequestContextHolder.getRequestAttributes();
+		ServletRequestAttributes sra = (ServletRequestAttributes)ra;
+		HttpServletRequest request = sra.getRequest();
+		// 获取输入参数
+		inputParamMap = request.getParameterMap();
+		// 获取请求地址
+		requestPath = request.getRequestURI();
+		requestMethod = request.getMethod();
+		jsonParams = &quot;&quot;;
+		if (requestMethod.equals(&quot;POST&quot;) || requestMethod.equals(&quot;PUT&quot;) || requestMethod.equals(&quot;DELETE&quot;)) {
+			jsonParams = JSONObject.toJSONString(joinPoint.getArgs());
+		}
+		startTimeMillis = System.currentTimeMillis(); // 记录方法开始执行的时间
+	}
+
+	/**
+	 * 
+	 * @Title：doAfterInServiceLayer
+	 * @Description: 方法调用后触发 
+	 * @param joinPoint
+	 */
+	@After(&quot;execution(* com.xxx.controller..*.*(..))&quot;)
+	public void doAfterInServiceLayer(JoinPoint joinPoint) {
+		endTimeMillis = System.currentTimeMillis(); // 记录方法执行完成的时间
+		this.printOptLog();
+	}
+
+	/**
+	 * 
+	 * @Title：doAround
+	 * @Description: 环绕触发 
+	 * @return
+	 * @throws Throwable
+	 */
+	@Around(&quot;execution(* com.xxx.controller..*.*(..))&quot;)
+	public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
+		try {
+			// 执行完方法的返回值：调用proceed()方法，就会触发切入点方法执行
+			outputParamMap = new HashMap&amp;lt;String, Object&amp;gt;();
+			Object result = pjp.proceed();// result的值就是被拦截方法的返回值
+			outputParamMap.put(&quot;result&quot;, result);
+			
+			return result;
+		} catch(BusinessException e) {
+			Result result = Result.fail().setErrCodeAndMsg(e.getCode(), e.getMessage());
+			outputParamMap.put(&quot;result&quot;, result);
+			return result;
+		} catch (Exception e) {
+			logger.error(e.toString(), e);
+		}
+		return pjp.proceed();
+	}
+
+	/**
+	 * @Title：printOptLog
+	 * @Description: 输出日志 
+	 */
+	private void printOptLog() {
+		Gson gson = new Gson();
+		StringBuilder sb = new StringBuilder();
+		if (StringUtils.isNotEmpty(jsonParams) &amp;amp;&amp;amp; jsonParams.length() &amp;gt; 500) {
+			jsonParams = jsonParams.substring(0, 500) + &quot;...&quot;;
+		}
+		String result = gson.toJson(outputParamMap);
+		if (result.length() &amp;gt; 500) {
+			result = result.substring(0, 500) + &quot;...&quot;;
+		}
+		sb.append(&quot;\n&quot;);
+	    sb.append(&quot;Method    : &quot;).append(requestMethod).append(&quot;\n&quot;);
+	    sb.append(&quot;JSONParams: &quot;).append(jsonParams).append(&quot;\n&quot;);
+	    sb.append(&quot;Params    : &quot;).append(gson.toJson(inputParamMap)).append(&quot;\n&quot;);
+	    sb.append(&quot;URI       : &quot;).append(requestPath).append(&quot;\n&quot;);
+	    sb.append(&quot;Time      : &quot;).append((endTimeMillis - startTimeMillis) + &quot;ms&quot;).append(&quot;\n&quot;);
+	    sb.append(&quot;Result    : &quot;).append(result);
+	    
+		logger.info(sb.toString());
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>java面试题</title>
@@ -631,27 +745,6 @@ $('input').focus(function() {
 &lt;p&gt;与其期待pokeman go在国服能愉快的玩耍，还不如期待国内跟风开发出来的带本土特色的类似游戏呢，毕竟技术上也不是难点。&lt;/p&gt;
 
 &lt;p&gt;所以在我看来，对于中国市场来说，种菜偷菜才是用户需求痛点！在地图上，有着各种各样的蔬菜，为了获得菜，玩家们乐此不疲的走出家门，奔赴一个又一个的菜点。对于标志性建筑还可以设置为菜园子，贡献度高的玩家可以成为至高无上的地主！2.0版本还支持斗地主！玩法极多，相信一定可以在国内击败pokeman go。好了，现在就差钱开工了，有老板想投资的吗？&lt;/p&gt;
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>冲动是可以用写代码来抑制的吧</title>
-    <link href="http://ouyanghan.com/mood"/>
-    <updated>2016-06-13T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/mood</id>
-    <content type="html">&lt;p&gt;心血来潮想写点啥&lt;/p&gt;
-
-&lt;p&gt;写着写着&lt;/p&gt;
-
-&lt;p&gt;又来bug了&lt;/p&gt;
-
-&lt;p&gt;bug解决完了&lt;/p&gt;
-
-&lt;p&gt;潮已经退了&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
