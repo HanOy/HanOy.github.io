@@ -6,7 +6,7 @@ tags: Chinese
 category: blog
 is_share: true
 disqus_comments: true
-description: 接口打印入参出参日志
+description: 控制层打印入参出参日志
 ---
 代码：
 
