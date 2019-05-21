@@ -66,6 +66,8 @@ JAVA 基础
 14、数组在内存中如何分配
 [答案](https://blog.csdn.net/lcl19970203/article/details/54428358)
 
+15、java8
+[答案](https://segmentfault.com/blog/yinhaonefu_java8)
 
 JAVA并发
 ---
