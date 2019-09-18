@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
     <script src="http://www.webglearth.com/v2/api.js"></script>
     <script>
     	var earth;
@@ -14,11 +16,11 @@
           attribution: '© OpenStreetMap contributors'
         }).addTo(earth);
 
-		marker = WE.marker([31.198248, 121.448596]).addTo(earth);
-        marker.bindPopup("<b>Hello world!</b><br>I am here.<br />", {maxWidth: 100, closeButton: true});
+		    marker = WE.marker([31.198248, 121.448596]).addTo(earth);
+        marker.bindPopup("I am here.<br />", {maxWidth: 100, closeButton: true});
 
         var marker1 = WE.marker([26.053351, 113.037404]).addTo(earth);
-        marker1.bindPopup("<b>where I grow up.<br />", {maxWidth: 100, closeButton: true});
+        marker1.bindPopup("where I grow up.<br />", {maxWidth: 100, closeButton: true});
 
         earth.setView([34.262278, 103.628637], 3);
       }
@@ -44,7 +46,7 @@
   <body onload="initialize()">
   	<div id='wx_logo' style='margin:0 auto;display:none;'>
     	<img src="../favicon.jpg" />
-	</div>
+    </div>
     <div id="earth_div"></div>
     <div id="buttons">
       <input type="button" value="Fly to Me" onclick="flyToMe();" style="width:120px;height:40px;border:2px #9999FF dashed;"><br><br>
