@@ -3,12 +3,83 @@
   <title>欧阳晗</title>
   <link href="http://ouyanghan/atom.xml" rel="self"/>
   <link href="http://ouyanghan/"/>
-  <updated>2019-09-20T14:50:58+08:00</updated>
+  <updated>2019-11-06T13:48:45+08:00</updated>
   <id>http://ouyanghan.com/</id>
   <author>
     <name>ouyanghan</name>
     <email>oyh3745@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>简历</title>
+    <link href="http://ouyanghan.com/resume-java"/>
+    <updated>2019-11-06T00:00:00+08:00</updated>
+    <id>http://ouyanghan.com/resume-java</id>
+    <content type="html">&lt;h2 id=&quot;联系方式&quot;&gt;联系方式&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;手机：18817354293&lt;/li&gt;
+  &lt;li&gt;Email：oyh3745@163.com&lt;/li&gt;
+  &lt;li&gt;QQ/微信号：339340195&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;个人信息&quot;&gt;个人信息&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;欧阳晗/男/1993&lt;/li&gt;
+  &lt;li&gt;本科/上海电力大学/计算机科学与技术 （2011~2015）&lt;/li&gt;
+  &lt;li&gt;工作年限：4年&lt;/li&gt;
+  &lt;li&gt;籍贯：湖南郴州
+&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;期望职位：Java工程师&lt;/li&gt;
+  &lt;li&gt;期望薪资：月薪10k~12k&lt;/li&gt;
+  &lt;li&gt;期望城市：长沙&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;工作经历&quot;&gt;工作经历&lt;/h2&gt;
+
+&lt;h3 id=&quot;湖南壹诺数据科技有限公司-更名前为湖南麓山云数据科技有限公司--2018年7月--2019年11月-&quot;&gt;湖南壹诺数据科技有限公司 [更名前为湖南麓山云数据科技有限公司] （ 2018年7月 ~ 2019年11月 ）&lt;/h3&gt;
+
+&lt;h4 id=&quot;车商e家项目&quot;&gt;车商e家项目&lt;/h4&gt;
+&lt;p&gt;我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。&lt;/p&gt;
+
+&lt;h4 id=&quot;火眼魔方项目&quot;&gt;火眼魔方项目&lt;/h4&gt;
+&lt;p&gt;我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。&lt;/p&gt;
+
+&lt;h4 id=&quot;壹诺普惠项目&quot;&gt;壹诺普惠项目&lt;/h4&gt;
+&lt;p&gt;我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。&lt;/p&gt;
+
+&lt;h3 id=&quot;均瑶集团-上海金扳手信息科技股份有限公司--2015年11月--2018年6月-&quot;&gt;均瑶集团-上海金扳手信息科技股份有限公司 （ 2015年11月 ~ 2018年6月 ）&lt;/h3&gt;
+
+&lt;h4 id=&quot;金扳手项目&quot;&gt;金扳手项目&lt;/h4&gt;
+&lt;p&gt;汽车服务行业SaaS平台-我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。&lt;/p&gt;
+
+&lt;h3 id=&quot;上海长鲸信息技术有限公司--2015年6月--2015年11月-&quot;&gt;上海长鲸信息技术有限公司 （ 2015年6月 ~ 2015年11月 ）&lt;/h3&gt;
+
+&lt;h4 id=&quot;魔魔达项目&quot;&gt;魔魔达项目&lt;/h4&gt;
+&lt;p&gt;O2O上门推拿-我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。&lt;/p&gt;
+
+&lt;h2 id=&quot;技能清单&quot;&gt;技能清单&lt;/h2&gt;
+
+&lt;p&gt;以下均为我熟练使用的技能&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;开发框架：SpringBoot/SpringMVC/MyBatis&lt;/li&gt;
+  &lt;li&gt;前端相关：JQuery/HTML5/CSS&lt;/li&gt;
+  &lt;li&gt;数据库：MySQL/Redis/Memcached&lt;/li&gt;
+  &lt;li&gt;构建工具：Svn/Git/Maven/Gradle/Nexus/Jenkins&lt;/li&gt;
+  &lt;li&gt;开放平台：支付宝开放平台/微信应用开发&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;致谢&quot;&gt;致谢&lt;/h2&gt;
+&lt;p&gt;感谢您花时间阅读我的简历，期待能有机会和您共事。&lt;/p&gt;
+
+</content>
+    <author>
+      <name>ouyanghan</name>
+      <uri>http://ouyanghan.com/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>日志aop</title>
@@ -713,41 +784,6 @@ $('input').focus(function() {
 &lt;p&gt;我还想到美剧《硅谷》里关于做平台还是做盒子的冲突。只关心公司市值的CEO想做一个基于男主技术的盒子，这样可以迅速产生利润拿到下一轮的钱。但想让自己的技术show给更多人的男主们却想做一个平台，希望更多的普通人喜欢他们的技术。虽然故事最后他们确实做了平台，那位CEO也下课了，但还是有种种原因公司拿不到下一轮融资破产而被收购。可能这就是现实与理想的差距吧，好了吐槽完了，得赶紧改bug去了。&lt;/p&gt;
 
 &lt;p&gt;对了，收购的人是男主的好朋友，所以在下一季估计他们就能改变世界了~&lt;/p&gt;
-</content>
-    <author>
-      <name>ouyanghan</name>
-      <uri>http://ouyanghan.com/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>聊聊pokeman go</title>
-    <link href="http://ouyanghan.com/pokemango"/>
-    <updated>2016-07-13T00:00:00+08:00</updated>
-    <id>http://ouyanghan.com/pokemango</id>
-    <content type="html">&lt;p&gt;任天堂、精灵宝可梦、Niantic合作推出的Pokemon Go《口袋妖怪Go》最近火的一塌糊涂。&lt;/p&gt;
-
-&lt;p&gt;虽然那个锁区的长方形框住了上海，抓不了小精灵，我还是把它给下下来感受了一把，毕竟还有新手教程可以抓一只妙蛙种子呢:P&lt;/p&gt;
-
-&lt;p&gt;打开游戏，开启定位功能之后，游戏会在摄像头实时拍摄的画面中叠加小精灵，这些精灵可能会藏在任何角落，你需要拿着手机四处走动，发现它并且抓住它。不得不说打开了游戏方式新的大门。基于的技术呢主要就是AR（增强现实，简单说就是虚拟的小精灵套在现实世界）和LBS（基于位置服务，简单说就是定位）。&lt;/p&gt;
-
-&lt;h2 id=&quot;lbs&quot;&gt;LBS&lt;/h2&gt;
-&lt;p&gt;先来看看LBS，国内最完备的无非就是百度地图和高德地图咯，但是pokeman go却是基于google地图的。2010年谷歌退出中国了，地图不准是应该的，但游戏地图里的数据居然会这么不准确！！当你真的去玩了就知道游戏里的地图是多么不准确了。给大家看看我截下来的图。。这可是上海徐家汇附近，不是什么犄角旮旯的地方。&lt;/p&gt;
-&lt;div&gt;
-	&lt;img src=&quot;/res/pokemango.jpg&quot; width=&quot;210&quot; height=&quot;360&quot; style=&quot;display:inline-block;vertical-align:right&quot; /&gt;
-	&lt;img src=&quot;/res/pokeman3.jpg&quot; width=&quot;280&quot; height=&quot;360&quot; style=&quot;display:inline-block;vertical-align:left&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;当你走到游戏地图的湖边想抓一只水系的小精灵，但是发现这里早已是一幢高楼，这个游戏体验得摔手机了。&lt;/p&gt;
-
-&lt;h2 id=&quot;ar&quot;&gt;AR&lt;/h2&gt;
-&lt;p&gt;来看看AR，貌似很厉害的样子。但实际了解下来，并不是什么超级复杂的技术，而且国内已经有AR功能的app了，只不过不是游戏而已，像这个app&lt;a href=&quot;http://baike.baidu.com/link?url=qlspSq4ou9HXE_JSOhlkbsPp74C6MM0qxK1t-e4ERoMfIZ6ZjZ0DphDb_2qQnK0hl6fcQ30fBsKnFMwwYqrYba&quot;&gt;随便走&lt;/a&gt;，基于AR+LBS的导航，也是挺有意思的。还有宜家的app&lt;a href=&quot;http://www.ikea.com/ms/zh_CN/campaigns/catalogue_2016/index.html&quot;&gt;家居指南&lt;/a&gt;，可以把虚拟家具直接放在家里看效果，cool~&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/res/pokemango2.jpg&quot; width=&quot;220&quot; height=&quot;380&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;与其期待pokeman go在国服能愉快的玩耍，还不如期待国内跟风开发出来的带本土特色的类似游戏呢，毕竟技术上也不是难点。&lt;/p&gt;
-
-&lt;p&gt;所以在我看来，对于中国市场来说，种菜偷菜才是用户需求痛点！在地图上，有着各种各样的蔬菜，为了获得菜，玩家们乐此不疲的走出家门，奔赴一个又一个的菜点。对于标志性建筑还可以设置为菜园子，贡献度高的玩家可以成为至高无上的地主！2.0版本还支持斗地主！玩法极多，相信一定可以在国内击败pokeman go。好了，现在就差钱开工了，有老板想投资的吗？&lt;/p&gt;
 </content>
     <author>
       <name>ouyanghan</name>
