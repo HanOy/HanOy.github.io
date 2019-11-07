@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 简历
-date: 2019-11-06
+date: 2019-11-07
 tags: 简历
 category: 简历
 is_share: true
@@ -78,6 +78,7 @@ O2O上门推拿 - 初创天使轮项目
 - 数据库：MySQL/Redis/Memcached
 - 构建工具：Svn/Git/Maven/Gradle/Nexus/Jenkins
 - 开放平台：支付宝开放平台/微信应用开发
+- Linux系统常用命令、微服务常用组件
       
 ---      
 ## 致谢
