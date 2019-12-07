@@ -1,0 +1,37 @@
+I"%<p>故事的起因是这样的：主角是一个搜索框，它在安卓中、网页浏览器中工作的好好的。可是它却在iphone中闹起了情绪。并且这个页面嵌在iframe中的时候才会出现这个问题。</p>
+
+<p>点击搜索后强行将input焦点移出来也并不管用：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$('searchBtn').click(function() {
+	$('input').blur();	
+})
+</code></pre></div></div>
+
+<p>问题出在使用了神奇的iframe上，这个时候就要派出更神奇的$(window)了：</p>
+
+<hr />
+
+<h2 id="step-1">step 1</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var inputFocused = false;
+$('input').focus(function() {
+    setTimeout(function() {
+        inputFocused = true;
+    },100);
+});
+</code></pre></div></div>
+
+<h2 id="step-2">step 2</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(window).click(function() {
+    if(inputFocused == true) {
+        $(window).focus();
+        $('input').blur();
+        inputFocused = false;
+    }
+});
+</code></pre></div></div>
+
+<hr />
+<p>至于为什么要加setTimeOut方法是因为 $(window).click()事件包括了屏幕上所有的点击，所以要让inputFocused为true有一些延迟咯 :)</p>
+:ET

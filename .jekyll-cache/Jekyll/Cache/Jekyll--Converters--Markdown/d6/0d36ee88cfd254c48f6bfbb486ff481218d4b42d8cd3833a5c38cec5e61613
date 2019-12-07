@@ -1,0 +1,18 @@
+I"�<p>这是<a href="http://ouyanghan.com/2048">H5的2048</a>，今天拉屎的时候感觉浏览器上运行操作手感还是太膈应了。so，今天尝试用phonegap把它转成了apk，果然流畅了很多，一下就突破了最高分纪录: )</p>
+
+<p>在这里稍微记录下用phonegap的感受，其实也就是看着官网<a href="http://phonegap.com">phonegap.com</a>的Get Started一步一步就好了。</p>
+
+<p>先抄一下百度百科，PhoneGap是一个用基于HTML，CSS和JavaScript的，创建移动跨平台移动应用程序的快速开发平台。</p>
+
+<p>步骤如下：</p>
+
+<ul>
+  <li>在电脑上装一个app</li>
+  <li>在手机上装一个app</li>
+  <li>新建一个phonegap项目，把html、js等放进去</li>
+  <li>启动这个项目</li>
+  <li>手机app连接这个项目便可以直接看效果了</li>
+  <li>然后打包用的是官网的打包服务</li>
+  <li>打包后下载安装就好了，太特么强大了。。。</li>
+</ul>
+:ET
