@@ -1,24 +1,13 @@
 ---
 layout: post
-title: java面试题
+title: java面试八股文
 date: 2018-06-12
 tags: 面试
 category: 技术
 is_share: true
 disqus_comments: true
-description: chenssy在某次跳槽中整理的Java面试大纲，及我整理中的答案
+description: 搜罗的Java面试题，及整理中的答案
 ---
-
-大纲大部分来源
----
-
-作者：占小狼
-
-链接：https://www.jianshu.com/p/a07d1d4004b0
-
-來源：简书
-
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 JAVA 基础
 ---
