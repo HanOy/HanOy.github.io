@@ -15,24 +15,6 @@ layout: default
     <!-- <info class="after">
 <div class="fb-like" data-href="//rsms.me{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
     </info> -->
-
-  {% if page.is_share %}
-    Share:
-    <a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
-  {% endif %}
-
-  {% if page.disqus_comments %}
-    <br>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      window.disqus_identifier = {% if page.tumblr_id %}"{{ page.tumblr_id }}"{% else %}"{{ page.id }}"{% endif %};
-    </script>
-    <script async src="//hunch.disqus.com/embed.js"></script>
-    <noscript>Please enable JavaScript to view the
-      <a href="http://disqus.com/?ref_noscript=hunch">comments powered by Disqus.</a>
-    </noscript>
-    {% include disqus.html %}
-  {% endif %}
   </div>
 </div>
 {% include autoreload-in-debug.html %}
