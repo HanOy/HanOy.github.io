@@ -4,7 +4,6 @@ title: 简历
 date: 2019-11-07
 tags: 简历
 category: 简历
-disqus_comments: true
 description: 求职简历
 ---
 

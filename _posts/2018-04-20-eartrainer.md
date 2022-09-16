@@ -4,8 +4,6 @@ title: 推荐一款练听力的app
 date: 2018-04-20
 tags: 音乐
 category: 音乐
-is_share: true
-disqus_comments: true
 description: 非常适合我等业余选手使用
 ---
 

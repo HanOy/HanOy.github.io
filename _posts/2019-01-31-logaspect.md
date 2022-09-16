@@ -4,8 +4,6 @@ title: 日志aop
 date: 2019-01-31
 tags: Chinese
 category: blog
-is_share: true
-disqus_comments: true
 description: 控制层打印入参出参日志
 ---
 代码：
@@ -24,9 +22,9 @@ description: 控制层打印入参出参日志
 		private String jsonParams;
 
 		/**
-		 * 
+		 *
 		 * @Title：doBeforeInServiceLayer
-		 * @Description: 方法调用前触发 
+		 * @Description: 方法调用前触发
 		 * @param joinPoint
 		 */
 		@Before("execution(* com.xxx.controller..*.*(..))")
@@ -47,9 +45,9 @@ description: 控制层打印入参出参日志
 		}
 
 		/**
-		 * 
+		 *
 		 * @Title：doAfterInServiceLayer
-		 * @Description: 方法调用后触发 
+		 * @Description: 方法调用后触发
 		 * @param joinPoint
 		 */
 		@After("execution(* com.xxx.controller..*.*(..))")
@@ -59,9 +57,9 @@ description: 控制层打印入参出参日志
 		}
 
 		/**
-		 * 
+		 *
 		 * @Title：doAround
-		 * @Description: 环绕触发 
+		 * @Description: 环绕触发
 		 * @return
 		 * @throws Throwable
 		 */
@@ -72,7 +70,7 @@ description: 控制层打印入参出参日志
 				outputParamMap = new HashMap<String, Object>();
 				Object result = pjp.proceed();// result的值就是被拦截方法的返回值
 				outputParamMap.put("result", result);
-				
+
 				return result;
 			} catch(BusinessException e) {
 				Result result = Result.fail().setErrCodeAndMsg(e.getCode(), e.getMessage());
@@ -86,7 +84,7 @@ description: 控制层打印入参出参日志
 
 		/**
 		 * @Title：printOptLog
-		 * @Description: 输出日志 
+		 * @Description: 输出日志
 		 */
 		private void printOptLog() {
 			Gson gson = new Gson();
@@ -105,7 +103,7 @@ description: 控制层打印入参出参日志
 		    sb.append("URI       : ").append(requestPath).append("\n");
 		    sb.append("Time      : ").append((endTimeMillis - startTimeMillis) + "ms").append("\n");
 		    sb.append("Result    : ").append(result);
-		    
+
 			logger.info(sb.toString());
 		}
 	}

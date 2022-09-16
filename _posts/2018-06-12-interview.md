@@ -4,7 +4,6 @@ title: java面试八股文
 date: 2018-06-12
 tags: 面试
 category: 技术
-disqus_comments: true
 description: 搜罗的Java面试题，及整理中的答案
 ---
 

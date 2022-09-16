@@ -4,8 +4,6 @@ title: 记一个兼容性问题
 date: 2017-03-10
 tags: Chinese
 category: 问题解决
-is_share: true
-disqus_comments: true
 description: iframe中焦点移出输入框iphone键盘却没有隐藏
 ---
 
@@ -14,7 +12,7 @@ description: iframe中焦点移出输入框iphone键盘却没有隐藏
 点击搜索后强行将input焦点移出来也并不管用：
 
 	$('searchBtn').click(function() {
-		$('input').blur();	
+		$('input').blur();
 	})
 
 问题出在使用了神奇的iframe上，这个时候就要派出更神奇的$(window)了：

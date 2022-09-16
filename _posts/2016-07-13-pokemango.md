@@ -4,8 +4,6 @@ title: 聊聊pokeman go
 date: 2016-07-13
 tags: Chinese
 category: blog
-is_share: true
-disqus_comments: true
 description: 任天堂、精灵宝可梦、Niantic合作推出的Pokemon Go《口袋妖怪Go》最近火的一塌糊涂。
 ---
 
