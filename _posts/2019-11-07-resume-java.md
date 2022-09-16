@@ -23,7 +23,7 @@ description: 求职简历
 
 - 语言：Java/JavaScript
 - 后端框架：SpringBoot/SpringCloud/MyBatis
-- 前端相关：HTML5/CSS/Vue/Node.js/Nuxt/Koa2
+- 前端相关：HTML5/CSS/Vue/Node.js/Nuxt.js/Koa2
 - 数据相关：MySQL/Redis/ElasticSearch
 - 微服务相关：Nacos/Seata/Dubbo
 - Linux系统运维部署
@@ -35,10 +35,19 @@ description: 求职简历
 - #### 找广项目
     户外广告行业产业平台，项目包括多个小程序，WEB端及管理后台
 
+    技术栈：SpringBoot/MyBatis/MySQL/Redis/ElasticSearch/RocketMQ/Vue/Nuxt.js
+
+    主要负责
+    1. xxx
+    2. xxx
+    3. xxx
+
 ### 湖南麓山云数据科技有限公司 （2018.7 ~ 2019.11）
 
 - #### 车商e家项目（CRM）
     车商业务全流程的管理平台，项目包括APP端（原生）和PC端管理平台（Vue）
+
+    技术栈：SpringBoot/MyBatis/MySQL/Redis
 
     主要负责
     1. 根据需求独自完成项目开发框架的搭建及MySQL数据库表结构设计。
@@ -48,6 +57,8 @@ description: 求职简历
 
 - #### 壹诺普惠项目
     服务于C端信贷经理的金融风控平台，项目包括APP端（原生）和PC端管理平台（Vue）
+
+    技术栈：SpringBoot/MyBatis/MySQL/Redis
 
     主要负责
     1. 壹诺普惠APP服务端单人负责。
@@ -60,8 +71,10 @@ description: 求职简历
 - #### 金扳手项目（SaaS）
     汽车后市场行业SaaS（H5嵌壳APP） - 包括轻量级 ERP、CRM、BI 等多元功能的门店经营管理工具，又整合生态圈里的供应链供应商、保险、金融、二手车、事故救援等业务
 
+    技术栈：SpringMVC/MyBatis/MySQL/Memcached/JQuery/HTML5/CSS
+
     主要负责
-    1. 优惠券模块，包括优惠券和会员卡，其中又有B端、C端、微信卡券及管理后台的后端开发及移动端H5开发。
+    1. 优惠券模块，包括优惠券和会员卡，其中又有B端、C端、微信卡券及管理后台的后端开发及移动端页面H5开发。
     2. 工单模块，工单列表及详情、下单、服务配置、微信支付、支付宝支付等等。
     3. 用户端商户列表，按定位距离排序，多维度的筛选，前后端查询效率的优化。
 
@@ -72,11 +85,13 @@ description: 求职简历
 - #### 魔魔达项目
     O2O上门推拿 - 初创天使轮项目
 
+    技术栈：SpringMVC/MyBatis/MySQL
+
     主要负责
     1. 公司唯一后台工程师，将外包公司开发的php的系统与另两名前端一起重构为Java服务端+AngularJS Ionic的跨平台移动应用。
     2. 服务端代码开发及上线，功能主要包括线上支付下单、后台派单、技师接单等。
     3. 对接美团等第三方平台。
-    4. 阿里云服务器维护等相关工作。
+    4. 搭建测试环境、代码仓库、阿里云服务器维护等相关工作。
 
     曾被赠予公司原始股10000股
 
