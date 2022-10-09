@@ -37,10 +37,17 @@ description: 求职简历
 
     技术栈：SpringBoot/MyBatis/MySQL/Redis/ElasticSearch/RocketMQ/Vue/Nuxt.js
 
-    主要负责
-    1. xxx
-    2. xxx
-    3. xxx
+    主要工作
+    1. 项目重构优化：
+      - 重构接口项目结构，区分功能模块
+      - 升级SpringBoot版本，添加Druid连接池，排查优化慢Sql
+      - 添加日志切面，按类型、日期统一输出日志
+      - 添加报警切面，代码异常企业微信通知
+      - 主导找广官网由Java Web项目重写为Nuxt.js项目
+    2. 支撑服务提效：
+      - 引入敏捷开发，搭建看板，提高研发团队效率
+      - 引入CI/CD，搭建Jenkins，建立测试生产环境前后端任务
+    3. 业务功能开发
 
 ---
 ### 湖南麓山云数据科技有限公司 （2018.7 ~ 2019.11）
@@ -50,7 +57,7 @@ description: 求职简历
 
     技术栈：SpringBoot/MyBatis/MySQL/Redis
 
-    主要负责
+    主要工作
     1. 根据需求独自完成项目开发框架的搭建及MySQL数据库表结构设计。
     2. 指导一名工程师，一同完成服务端开发。
 
@@ -61,7 +68,7 @@ description: 求职简历
 
     技术栈：SpringBoot/MyBatis/MySQL/Redis
 
-    主要负责
+    主要工作
     1. 壹诺普惠APP服务端单人负责。
     2. 将旧系统代码重构优化为RestApi接口。
     3. 后续风控服务、信用分体系、商城系统、秒杀业务等的开发维护。
@@ -75,7 +82,7 @@ description: 求职简历
 
     技术栈：SpringMVC/MyBatis/MySQL/Memcached/JQuery/HTML5/CSS
 
-    主要负责
+    主要工作
     1. 优惠券模块，包括优惠券和会员卡，其中又有B端、C端、微信卡券及管理后台的后端开发及移动端页面H5开发。
     2. 工单模块，工单列表及详情、下单、服务配置、微信支付、支付宝支付等等。
     3. 用户端商户列表，按定位距离排序，多维度的筛选，前后端查询效率的优化。
@@ -90,7 +97,7 @@ description: 求职简历
 
     技术栈：SpringMVC/MyBatis/MySQL
 
-    主要负责
+    主要工作
     1. 公司唯一后台工程师，将外包公司开发的php的系统与另两名前端一起重构为Java服务端+AngularJS Ionic的跨平台移动应用。
     2. 服务端代码开发及上线，功能主要包括线上支付下单、后台派单、技师接单等。
     3. 对接美团等第三方平台。
