@@ -34,7 +34,7 @@ description: 求职简历
 - #### 找广项目
     户外广告行业产业平台，项目包括多个小程序，WEB端及管理后台
 
-    技术栈：SpringBoot/MyBatis/MySQL/Redis/ElasticSearch/RocketMQ/Vue/Nuxt.js
+    技术栈：SpringBoot/MyBatis/MySQL/Redis/ElasticSearch/RocketMQ/Vue/微信小程序
 
     主要工作
     1. 项目重构优化：
@@ -46,8 +46,11 @@ description: 求职简历
     2. 支撑服务提效：
       - 引入敏捷开发，搭建看板，提高研发团队效率
       - 引入CI/CD，搭建Jenkins，建立测试生产环境前后端任务
+	  - 服务器运维，数据库维护
     3. 业务功能开发
-
+	  - 广告位相关业务流程
+	  - IM即时聊天
+	  - 用户相关服务等
 ---
 ### 湖南麓山云数据科技有限公司 （2018.7 ~ 2019.11）
 
