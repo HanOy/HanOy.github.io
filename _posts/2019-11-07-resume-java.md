@@ -24,14 +24,14 @@ description: 求职简历
 - 后端框架：SpringBoot/SpringCloud
 - 前端相关：HTML5/CSS/Vue/Node.js/Nuxt.js/Koa2
 - 数据相关：MySQL/Redis/ElasticSearch
-- 微服务相关：Nacos/Seata/Dubbo
+- 其他：Nginx/Nacos/Seata/Dubbo
 - Linux系统运维部署
 
 ## 工作经历
 
 ### 湖南找广科技有限公司（2019.12 ~ 2022.12）
 
-- #### 找广项目
+- #### 找广网项目
     户外广告行业产业平台，项目包括多个小程序，WEB端及管理后台
 
     技术栈：SpringBoot/MyBatis/MySQL/Redis/ElasticSearch/RocketMQ/Vue/微信小程序
