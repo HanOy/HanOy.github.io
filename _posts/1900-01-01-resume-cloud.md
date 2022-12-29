@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 简历
-date: 1900-1-1
+date: 2022-12-25
 tags: 简历
 category: 简历
 description: 求职简历
